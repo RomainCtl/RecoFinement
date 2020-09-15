@@ -1,0 +1,26 @@
+site_name: RecoFinement
+repo_url: https://github.com/RomainCtl/RecoFinement
+nav:
+    - Home: index.md
+    - About us: about.md
+
+theme:
+    name: material
+    custom_dir: docs/overrides
+    palette:
+        primary: black
+
+extra_javascript:
+    - assets/javascript/zoom_image.js
+extra_css:
+    - assets/stylesheet/extra.css
+
+markdown_extensions:
+    - codehilite
+    - pymdownx.smartsymbols
+    - admonition
+    - pymdownx.superfences
+    - pymdownx.tabbed
+
+plugins:
+    - search

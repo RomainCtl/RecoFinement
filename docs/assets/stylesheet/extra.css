@@ -1,0 +1,7 @@
+.md-content img:hover {
+    cursor: zoom-in;
+}
+
+.md-content p {
+    text-align: justify;
+}
