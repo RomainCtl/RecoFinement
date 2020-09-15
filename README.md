@@ -12,6 +12,11 @@ We would like to be able to offer recommendations on various contents, in partic
 * applications
 
 
+## Project documentation
+
+You will find the project documendation at [https://RomainCtl.github.io/RecoFinement/](https://RomainCtl.github.io/RecoFinement/)
+
+
 ## Usage
 
 This project has a static website build with [mkdocs](https://www.mkdocs.org/) to provide project documentation.
