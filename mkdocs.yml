@@ -1,4 +1,5 @@
 site_name: RecoFinement
+site_url: https://RomainCtl.github.io/RecoFinement/
 repo_url: https://github.com/RomainCtl/RecoFinement
 nav:
     - Home: index.md
