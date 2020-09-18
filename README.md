@@ -12,6 +12,21 @@ We would like to be able to offer recommendations on various contents, in partic
 * applications
 
 
+## Requirements
+
+In order to be able to make changes to the application, you must have the necessary tools to run the application. The following command lines will install all the tools you need:
+```bash
+# Python 3.8 & pip
+apt install python3.8 python3-pip
+
+# To auto-create pull request from command line
+python3 -m pip install pipenv git-pull-request
+```
+
+> *If you have more than one version of Python installed on your machine, the `python3` command may execute a different version.,* \
+*See : [https://jcutrer.com/linux/upgrade-python37-ubuntu1810](https://jcutrer.com/linux/upgrade-python37-ubuntu1810) (taking into account the desired version)*
+
+
 ## Project documentation
 
 You will find the project documendation at [https://RomainCtl.github.io/RecoFinement/](https://RomainCtl.github.io/RecoFinement/)
