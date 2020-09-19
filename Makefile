@@ -54,10 +54,10 @@ install: pipenv ## Run 'pipenv install'
 	${PIPENV} install
 
 doc-serve: ## Serve locally documentation
-	$(PYTHON) -m mkdocs serve
+	$(PYTHON_ENV) -m mkdocs serve
 
 doc-build: ## Build mkdocs
-	$(PYTHON) -m mkdocs build --clean
+	$(PYTHON_ENV) -m mkdocs build --clean
 
 
 # --------------------------------------------------------
