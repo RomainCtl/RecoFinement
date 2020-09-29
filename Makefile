@@ -45,10 +45,13 @@ pipenv: # installs pipenv if necessary
 # --------------------------------------------------------
 
 init: ## Imports git submodule (to do only if outside a master project)
-	git submodule sync && git submodule update --init --remote
+	git submodule sync && git -c submodule."datas".update=none submodule update --init --remote
 
-update: ## Update all gitmodules to last commit
-	git submodule update --remote
+update: ## Update all gitmodules to last commit (exclude 'datas')
+	git -c submodule."datas".update=none  submodule update --remote
+
+update-datas: ## Update 'datas' submodule only
+	git -c submodule."services/ui".update=none -c submodule."services/api".update=none submodule update --remote
 
 install: pipenv ## Run 'pipenv install'
 	${PIPENV} install

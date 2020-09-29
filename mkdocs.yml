@@ -3,11 +3,21 @@ site_url: https://RomainCtl.github.io/RecoFinement/
 repo_url: https://github.com/RomainCtl/RecoFinement
 nav:
     - Home: index.md
-    - About us: about.md
+    - Use RecoFinement:
+        - Welcome: use/index.md
+    - How to setup:
+        - Getting started: setup/index.md
+    - Advise.ly:
+        - About us: about.md
 
 theme:
     name: material
-    custom_dir: docs/overrides
+    custom_dir: docs/assets/overrides
+    language: en
+    font:
+        text: Roboto
+    features:
+        - navigation.tabs
     palette:
         primary: black
 
@@ -25,3 +35,4 @@ markdown_extensions:
 
 plugins:
     - search
+    - markdownextradata

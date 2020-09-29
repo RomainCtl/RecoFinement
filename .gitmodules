@@ -6,3 +6,7 @@
 	path = services/ui
 	url = ../RecoFinement-ui.git
 	branch = master
+[submodule "datas"]
+	path = datas
+	url = https://github.com/RomainCtl/RecoFinement-Datasets.git
+	branch = master
