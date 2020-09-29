@@ -26,6 +26,7 @@ python3 -m pip install pipenv git-pull-request
 > *If you have more than one version of Python installed on your machine, the `python3` command may execute a different version.,* \
 *See : [https://jcutrer.com/linux/upgrade-python37-ubuntu1810](https://jcutrer.com/linux/upgrade-python37-ubuntu1810) (taking into account the desired version)*
 
+You also need to install a PostgreSQL database (config in `.env` file, see: [RecoFinement-api](https://github.com/RomainCtl/RecoFinement-api))
 
 ## Project documentation
 
