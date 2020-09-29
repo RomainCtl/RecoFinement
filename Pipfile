@@ -9,7 +9,6 @@ verify_ssl = true
 mkdocs = "*"
 mkdocs-material = "*"
 markdown-include = "*"
-mkdocs-markdownextradata-plugin = "*"
 
 [requires]
 python_version = "3.8"

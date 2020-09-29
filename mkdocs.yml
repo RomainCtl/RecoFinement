@@ -35,4 +35,3 @@ markdown_extensions:
 
 plugins:
     - search
-    - markdownextradata
