@@ -3,10 +3,14 @@ site_url: https://RomainCtl.github.io/RecoFinement/
 repo_url: https://github.com/RomainCtl/RecoFinement
 nav:
     - Home: index.md
-    - Use RecoFinement:
-        - Welcome: use/index.md
-    - How to setup:
-        - Getting started: setup/index.md
+    - Users:
+        - Welcome: users/index.md
+        - Getting started: users/gettingstarted.md
+    - Developers:
+        - Installation: developers/index.md
+        - Data sources: developers/datasources.md
+        - Application architecture: developers/architecture.md
+        - Database: developers/database.md
     - Advise.ly:
         - About us: about.md
 
@@ -18,6 +22,7 @@ theme:
         text: Roboto
     features:
         - navigation.tabs
+        - tabs
     palette:
         primary: black
 
