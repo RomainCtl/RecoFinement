@@ -1,5 +1,5 @@
 !!! important
-    We use __PostgreSQL__ as SGBD. You will find more informations about it [here](https://www.postgresql.org/).
+    We use __PostgreSQL__ as DBMS *(Data Base Management System)*. You will find more informations about it [here](https://www.postgresql.org/).
 
 ## Objects definition
 
