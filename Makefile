@@ -123,7 +123,7 @@ git-branch: ## create new branch [feat|fix|doc|devops] (ex: make git-new feat="a
 	git checkout $(GIT_BRANCH_MAIN)
 	git pull --rebase
 	git checkout -b $(NEW_BRANCH_NAME)
-	git pull-request --fork never -k -m " " -C " " --title "$(NEW_BRANCH_TITLE)"
+	git pull-request --fork never -k -m " " -C " " --title "$(NEW_BRANCH_TITLE)" --branch-prefix "" -R
 
 # ---------------------
 git-master: ## Back to main branch and reset to main branch
