@@ -7,6 +7,8 @@ We use Flask web framework, it is a micro framework written in Python. It is cla
 
 However, Flask supports extensions that can add application features as if they were implemented in Flask itself.
 
+[Flask documentation](https://flask.palletsprojects.com/en/1.1.x/)
+
 ### Used Flask Extensions
 
 !!! note
@@ -73,4 +75,9 @@ You will find more informaiton about JWT in [official JWT website](https://jwt.i
 
 ## User interface
 
+We use [Angular](https://angular.io/), it is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.
 
+
+### UI Architecture Schema
+
+![UI Architecture](../assets/images/ui_architecture.png)
