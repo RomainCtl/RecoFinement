@@ -35,6 +35,20 @@
 | image_url_m | String | URL for medium image size |
 | image_url_l | String | URL for large image size |
 
+### Episode
+
+| Name | Type | Description |
+|---|---|---|
+| __episode_id__ | __Integer__ | __Episode identifier__ |
+| imdbid | String | IMDB identifier |
+| title | String |  |
+| year | Integer | release year |
+| genres | String | List of genres |
+| serie_id | Integer | Serie identifier |
+| season_number | Integer |  |
+| episode_number | Integer |  |
+
+
 ### Game
 
 | Name | Type | Description |
@@ -76,6 +90,20 @@
 | imdbid | String | IMDB movie identifier |
 | tmdbid | String | TMDB movie identifier |
 
+### Serie
+
+| Name | Type | Description |
+|---|---|---|
+| __serie_id__ | __Integer__ | __Serie identifier__ |
+| imdbid | String | IMDB identifier |
+| title | String |  |
+| start_year | Integer |  |
+| end_year | Integer |  |
+| genres | String | List of genres |
+| writers | Text | List of writers separated by ',' |
+| directors | Text | List of directors separated by ',' |
+| actors | Text | List of actors separated by ',' |
+
 ### Track
 
 | Name | Type | Description |
@@ -108,6 +136,10 @@
 
 !!! info
     All scheme may be subject to change at a later date depending on the progress of the project.
+
+!!! failure
+    There is no relationship between users and series in the datasets we used.
+    Cold start problem for series.
 
 ### User - Content realtionship
 

@@ -21,7 +21,8 @@
 
 ### Serie
 
-- *coming soon*
+- 73 504 unique series
+- 5 171 349 unique episodes
 
 ### Games
 
@@ -54,7 +55,7 @@
 
 ### Serie
 
-- *coming soon*
+- [IMDB](https://developer.imdb.com/):: All TV series metadata
 
 ### Games
 
