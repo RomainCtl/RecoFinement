@@ -34,6 +34,8 @@
 | image_url_s | String | URL for small image size |
 | image_url_m | String | URL for medium image size |
 | image_url_l | String | URL for large image size |
+| rating | Float | Average rating |
+| rating_count | Integer | Number of user rating |
 
 ### Episode
 
@@ -47,6 +49,8 @@
 | serie_id | Integer | Serie identifier |
 | season_number | Integer |  |
 | episode_number | Integer |  |
+| rating | Float | Average rating |
+| rating_count | Integer | Number of user rating |
 
 
 ### Game
@@ -89,6 +93,8 @@
 | writer | String | Name of the writer |
 | imdbid | String | IMDB movie identifier |
 | tmdbid | String | TMDB movie identifier |
+| rating | Float | Average rating |
+| rating_count | Integer | Number of user rating |
 
 ### Serie
 
@@ -103,6 +109,8 @@
 | writers | Text | List of writers separated by ',' |
 | directors | Text | List of directors separated by ',' |
 | actors | Text | List of actors separated by ',' |
+| rating | Float | Average rating |
+| rating_count | Integer | Number of user rating |
 
 ### Track
 
