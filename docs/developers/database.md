@@ -126,7 +126,7 @@
 | language | String |  |
 | rating | Float | Average rating |
 | rating_count | Integer | Number of user rating |
-| url | Text | Resource URL linked with this track |
+| spotify_id | String | Track spotify id |
 | covert_art_url | Text |  |
 
 ### User
