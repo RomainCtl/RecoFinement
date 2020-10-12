@@ -23,6 +23,7 @@
 
 - 73 504 unique series
 - 5 171 349 unique episodes
+- 86 389 462 user - serie - rating
 
 ### Games
 
