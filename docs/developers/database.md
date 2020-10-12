@@ -95,6 +95,7 @@
 | tmdbid | String | TMDB movie identifier |
 | rating | Float | Average rating |
 | rating_count | Integer | Number of user rating |
+| cover | String | Cover url |
 
 ### Serie
 
