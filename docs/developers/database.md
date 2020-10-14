@@ -70,6 +70,15 @@
 | recommendations | String | Number of user recommendations |
 | release_date | String |  |
 
+### Genre
+
+| Name | Type | Description |
+|---|---|---|
+| __genre_id__ | __Integer__ | __Genre identifier__ |
+| name | String | genre name |
+| count | Integer | number of user |
+| content_type | Enum | APPLICATION, BOOK, GAME, MOVIE, SERIE or TRACK |
+
 ### Group
 
 | Name | Type | Description |
@@ -174,3 +183,10 @@ All content table will have a "Many to many" relationship with itself, it will s
 A user can create a group, and add other user to this group, the objective is to be able to make recommendations to the group (e.g. Playlist for a party with friends).
 
 ![Recofinement user social schema](../assets/images/recofinement_social.png)
+
+
+### User Interests
+
+A user can like or not a genre. A genre can be linked to another genre like content similarity.
+
+![Recofinement user interests](../assets/images/Recofinement_user_interests.png)
