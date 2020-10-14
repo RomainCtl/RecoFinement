@@ -33,6 +33,14 @@ You also need to install a PostgreSQL database (config in `.env` file, see: [Rec
 You will find the project documendation at [https://RomainCtl.github.io/RecoFinement/](https://RomainCtl.github.io/RecoFinement/)
 
 
+## Project submodules
+
+* A User-Interface (Angular): [https://github.com/RomainCtl/RecoFinement-ui](https://github.com/RomainCtl/RecoFinement-ui)
+* An API (Python and Flask): [https://github.com/RomainCtl/RecoFinement-api](https://github.com/RomainCtl/RecoFinement-api)
+* All Datas (use of Git LFS): [https://github.com/RomainCtl/RecoFinement-Datasets](https://github.com/RomainCtl/RecoFinement-Datasets)
+* Recommendation engine: *Coming soon*
+
+
 ## Usage
 
 This project has a static website build with [mkdocs](https://www.mkdocs.org/) to provide project documentation.
