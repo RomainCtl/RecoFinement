@@ -1,10 +1,10 @@
 [submodule "services/api"]
 	path = services/api
-	url = ../RecoFinement-api.git
+	url = https://github.com/RomainCtl/RecoFinement-api.git
 	branch = master
 [submodule "services/ui"]
 	path = services/ui
-	url = ../RecoFinement-ui.git
+	url = https://github.com/RomainCtl/RecoFinement-ui.git
 	branch = master
 [submodule "datas"]
 	path = datas
