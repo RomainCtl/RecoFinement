@@ -10,3 +10,7 @@
 	path = datas
 	url = https://github.com/RomainCtl/RecoFinement-Datasets.git
 	branch = master
+[submodule "services/reco_engine"]
+	path = services/reco_engine
+	url = https://github.com/RomainCtl/RecoFinement-engine.git
+	branch = master

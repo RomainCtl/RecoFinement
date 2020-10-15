@@ -38,7 +38,7 @@ You will find the project documendation at [https://RomainCtl.github.io/RecoFine
 * A User-Interface (Angular): [https://github.com/RomainCtl/RecoFinement-ui](https://github.com/RomainCtl/RecoFinement-ui)
 * An API (Python and Flask): [https://github.com/RomainCtl/RecoFinement-api](https://github.com/RomainCtl/RecoFinement-api)
 * All Datas (use of Git LFS): [https://github.com/RomainCtl/RecoFinement-Datasets](https://github.com/RomainCtl/RecoFinement-Datasets)
-* Recommendation engine: *Coming soon*
+* Recommendation engine: [https://github.com/RomainCtl/RecoFinement-engine](https://github.com/RomainCtl/RecoFinement-engine)
 
 
 ## Usage
