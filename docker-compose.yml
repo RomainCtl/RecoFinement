@@ -1,0 +1,78 @@
+version: "3.7"
+
+# =============================================================================
+volumes:
+# =============================================================================
+  postgres_data:
+
+# # =============================================================================
+# networks:
+# # =============================================================================
+#   docker_network:
+
+
+
+# =============================================================================
+services:
+# =============================================================================
+
+  # -------------------------------------------------------------------------
+  api:
+  # -------------------------------------------------------------------------
+    build: ./services/api/
+    container_name: api
+    restart: on-failure
+    expose:
+      - 4040
+    networks:
+      - default
+    env_file:
+      - ./services/api/.env
+    environment:
+      DB_URL: db # override
+      PIPENV_DONT_LOAD_ENV: 1
+    depends_on:
+      - db
+
+  # -------------------------------------------------------------------------
+  db:
+  # -------------------------------------------------------------------------
+    image: postgres:12-alpine
+    restart: unless-stopped
+    networks:
+      - default
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_USER: ${DB_USER_LOGIN}
+      POSTGRES_PASSWORD: ${DB_USER_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+
+  # -------------------------------------------------------------------------
+  ui:
+  # -------------------------------------------------------------------------
+    build:
+      context: ./services/ui/
+      args:
+        configuration: ${ENVIRONMENT}
+    container_name: ui
+    restart: on-failure
+    expose:
+      - 80
+    networks:
+      - default
+
+  # -------------------------------------------------------------------------
+  nginx:
+  # -------------------------------------------------------------------------
+    build: ./services/nginx
+    # image: nginx:1.13.7
+    container_name: nginx
+    # volumes:
+    #   - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - default
+    ports:
+      - 80:80
+    depends_on:
+      - api

@@ -28,6 +28,14 @@ python3 -m pip install pipenv git-pull-request
 
 You also need to install a PostgreSQL database (config in `.env` file, see: [RecoFinement-api](https://github.com/RomainCtl/RecoFinement-api))
 
+In order to be able to run project with docker, you must have:
+```bash
+# Docker & docker-compose
+apt install docker.io docker-compose
+```
+
+> *coming soon for windows user*
+
 ## Project documentation
 
 You will find the project documendation at [https://RomainCtl.github.io/RecoFinement/](https://RomainCtl.github.io/RecoFinement/)
@@ -73,6 +81,11 @@ make help
 
 To launch services (api and front app), please refear to their `README.md`.
 
+### With docker
+
+*Usually Docker uses the default __172.17.0.1/16__ subnet for container networking.*
+
+TODO
 
 ## Contribution
 
