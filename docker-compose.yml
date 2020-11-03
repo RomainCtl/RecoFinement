@@ -55,8 +55,9 @@ services:
       context: ./services/ui/
       args:
         configuration: ${ENVIRONMENT}
+        server_name: ${DOCKER_IP}
     container_name: ui
-    restart: on-failure
+    restart: unless-stopped
     expose:
       - 80
     networks:
@@ -66,13 +67,12 @@ services:
   nginx:
   # -------------------------------------------------------------------------
     build: ./services/nginx
-    # image: nginx:1.13.7
+    restart: on-failure
     container_name: nginx
-    # volumes:
-    #   - ./nginx.conf:/etc/nginx/conf.d/default.conf
     networks:
       - default
     ports:
       - 80:80
     depends_on:
       - api
+      - ui

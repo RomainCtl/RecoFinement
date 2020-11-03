@@ -34,7 +34,11 @@ In order to be able to run project with docker, you must have:
 apt install docker.io docker-compose
 ```
 
-> *coming soon for windows user*
+### Windows User
+
+> How to use docker comfortably on windows
+
+If you work on windows, I advise you to follow the instructions in this repo: [https://github.com/RomainCtl/vagrant_docker](https://github.com/RomainCtl/vagrant_docker)
 
 ## Project documentation
 
@@ -85,7 +89,41 @@ To launch services (api and front app), please refear to their `README.md`.
 
 *Usually Docker uses the default __172.17.0.1/16__ subnet for container networking.*
 
-TODO
+> If you use our recommendation from [here](###-windows-user), you may write __"DOCKER_IP=192.168.56.10"__ into `.env` file.
+
+```bash
+# Build docker image from source (all services)
+make build
+
+# Start the container (all services)
+make start
+
+# Display logs from the running container (all services)
+make logs
+
+# Stop the container (all services)
+make stop
+
+# Destroy the container (all services)
+make rm
+```
+
+You can also do each action for one service using:
+```bash
+# Internal services starting tasks
+
+## (Re)start 'api' service only (also available: 'api-[build|logs|sh|stop|rm])
+make api
+
+## (Re)start 'postgresql' service only (also available: 'postgresql-[build|logs|sh|stop|rm])
+make postgresql
+
+## (Re)start 'front' service only (also available: 'front-[build|logs|sh|stop|rm])
+make front
+
+## (Re)start 'nginx' service only (also available: 'nginx-[build|logs|sh|stop|rm])
+make nginx
+```
 
 ## Contribution
 

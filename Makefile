@@ -18,6 +18,7 @@ else
 endif
 
 ENVIRONMENT = local
+DOCKER_IP := 172.17.0.1 #192.168.56.10
 
 # --------------------------------------------------------
 # Define project docker image
@@ -30,7 +31,7 @@ POSTGRESQL_SERVICE_NAME := db
 POSTGRESQL_SERVICE_SHELL := sh
 # ----
 FRONT_SERVICE_NAME := ui
-FRONT_SERVICE_SHELL := shecofinement/login
+FRONT_SERVICE_SHELL := sh
 # ----
 REVERSE_PROXY_SERVICE_NAME := nginx
 REVERSE_PROXY_SERVICE_SHELL := sh
