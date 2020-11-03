@@ -17,6 +17,26 @@ else
 	PYTHON := python3
 endif
 
+ENVIRONMENT = local
+DOCKER_IP := 172.17.0.1 #192.168.56.10
+
+# --------------------------------------------------------
+# Define project docker image
+
+# ----
+API_SERVICE_NAME := api
+API_SERVICE_SHELL := sh
+# ----
+POSTGRESQL_SERVICE_NAME := db
+POSTGRESQL_SERVICE_SHELL := sh
+# ----
+FRONT_SERVICE_NAME := ui
+FRONT_SERVICE_SHELL := sh
+# ----
+REVERSE_PROXY_SERVICE_NAME := nginx
+REVERSE_PROXY_SERVICE_SHELL := sh
+# ----
+
 # --------------------------------------------------------
 # Commands
 
@@ -27,6 +47,7 @@ PYTHON_ENV = ${PIPENV} run ${PYTHON}
 # include env
 
 -include .env
+-include ./services/api/.env
 export
 
 # ========================================================
@@ -58,6 +79,61 @@ doc-serve: ## Serve locally documentation
 
 doc-build: ## Build mkdocs
 	$(PYTHON_ENV) -m mkdocs build --clean
+
+
+build: ## Build docker image from source
+	docker-compose build
+
+start: build ## Start the container
+	docker-compose up -d
+
+logs: ## Display logs from the running container
+	docker-compose logs -f
+
+stop: ## Stop the container
+	docker-compose stop
+
+rm: stop ## Destroy the container
+	docker-compose down
+
+# --------------------------------------------------------
+##@ Internal services starting tasks
+# --------------------------------------------------------
+
+api: api-rm ## (Re)start 'api' service only (also available: 'api-[build|logs|sh|stop|rm])
+	docker-compose up -d $(API_SERVICE_NAME)
+api-build:; docker-compose build $(API_SERVICE_NAME)
+api-logs:; docker-compose logs -f $(API_SERVICE_NAME)
+api-sh:; docker-compose exec $(API_SERVICE_NAME) $(API_SERVICE_SHELL)
+api-stop:; docker-compose stop $(API_SERVICE_NAME)
+api-rm: api-stop; docker-compose rm -f $(API_SERVICE_NAME)
+
+
+postgresql: postgresql-rm ## (Re)start 'postgresql' service only (also available: 'postgresql-[build|logs|sh|stop|rm])
+	docker-compose up -d $(POSTGRESQL_SERVICE_NAME)
+postgresql-build:; docker-compose build $(POSTGRESQL_SERVICE_NAME)
+postgresql-logs:; docker-compose logs -f $(POSTGRESQL_SERVICE_NAME)
+postgresql-sh:; docker-compose exec $(POSTGRESQL_SERVICE_NAME) $(POSTGRESQL_SERVICE_SHELL)
+postgresql-stop:; docker-compose stop $(POSTGRESQL_SERVICE_NAME)
+postgresql-rm: postgresql-stop; docker-compose rm -f $(POSTGRESQL_SERVICE_NAME)
+
+
+front: front-rm ## (Re)start 'front' service only (also available: 'front-[build|logs|sh|stop|rm])
+	docker-compose up -d $(FRONT_SERVICE_NAME)
+front-build:; docker-compose build $(FRONT_SERVICE_NAME)
+front-logs:; docker-compose logs -f $(FRONT_SERVICE_NAME)
+front-sh:; docker-compose exec $(FRONT_SERVICE_NAME) $(FRONT_SERVICE_SHELL)
+front-stop:; docker-compose stop $(FRONT_SERVICE_NAME)
+front-rm: front-stop; docker-compose rm -f $(FRONT_SERVICE_NAME)
+
+
+nginx: nginx-rm ## (Re)start 'nginx' service only (also available: 'nginx-[build|logs|sh|stop|rm])
+	docker-compose up -d $(REVERSE_PROXY_SERVICE_NAME)
+nginx-build:; docker-compose build $(REVERSE_PROXY_SERVICE_NAME)
+nginx-logs:; docker-compose logs -f $(REVERSE_PROXY_SERVICE_NAME)
+nginx-sh:; docker-compose exec $(REVERSE_PROXY_SERVICE_NAME) $(REVERSE_PROXY_SERVICE_SHELL)
+nginx-stop:; docker-compose stop $(REVERSE_PROXY_SERVICE_NAME)
+nginx-rm: nginx-stop; docker-compose rm -f $(REVERSE_PROXY_SERVICE_NAME)
 
 
 # --------------------------------------------------------
