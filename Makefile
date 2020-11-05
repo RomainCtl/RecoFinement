@@ -27,6 +27,9 @@ DOCKER_IP := 172.17.0.1 #192.168.56.10
 API_SERVICE_NAME := api
 API_SERVICE_SHELL := sh
 # ----
+ENGINE_SERVICE_NAME := engine
+ENGINE_SERVICE_SHELL := sh
+# ----
 POSTGRESQL_SERVICE_NAME := db
 POSTGRESQL_SERVICE_SHELL := sh
 # ----
@@ -96,6 +99,12 @@ stop: ## Stop the container
 rm: stop ## Destroy the container
 	docker-compose down
 
+import-data: ## Import './datas' into docker DB service (execute once !)
+	docker exec $(POSTGRESQL_SERVICE_NAME) rm -rf /tmp/datas/*
+	docker cp $(realpath ./datas/) $(POSTGRESQL_SERVICE_NAME):/tmp/
+	docker exec $(POSTGRESQL_SERVICE_NAME) sed -i "s#FROM '#FROM '/tmp/datas/#g" tmp/datas/script.sql
+	docker exec -i $(POSTGRESQL_SERVICE_NAME) psql -h 127.0.0.1 -p $(DB_PORT) -d $(DB_NAME) -U $(DB_USER_LOGIN) -f /tmp/datas/script.sql
+
 # --------------------------------------------------------
 ##@ Internal services starting tasks
 # --------------------------------------------------------
@@ -109,13 +118,22 @@ api-stop:; docker-compose stop $(API_SERVICE_NAME)
 api-rm: api-stop; docker-compose rm -f $(API_SERVICE_NAME)
 
 
-postgresql: postgresql-rm ## (Re)start 'postgresql' service only (also available: 'postgresql-[build|logs|sh|stop|rm])
+engine: engine-rm ## (Re)start 'engine' service only (also available: 'engine-[build|logs|sh|stop|rm])
+	docker-compose up -d $(ENGINE_SERVICE_NAME)
+engine-build:; docker-compose build $(ENGINE_SERVICE_NAME)
+engine-logs:; docker-compose logs -f $(ENGINE_SERVICE_NAME)
+engine-sh:; docker-compose exec $(ENGINE_SERVICE_NAME) $(ENGINE_SERVICE_SHELL)
+engine-stop:; docker-compose stop $(ENGINE_SERVICE_NAME)
+engine-rm: engine-stop; docker-compose rm -f $(ENGINE_SERVICE_NAME)
+
+
+db: db-rm ## (Re)start 'db' service only (also available: 'db-[build|logs|sh|stop|rm])
 	docker-compose up -d $(POSTGRESQL_SERVICE_NAME)
-postgresql-build:; docker-compose build $(POSTGRESQL_SERVICE_NAME)
-postgresql-logs:; docker-compose logs -f $(POSTGRESQL_SERVICE_NAME)
-postgresql-sh:; docker-compose exec $(POSTGRESQL_SERVICE_NAME) $(POSTGRESQL_SERVICE_SHELL)
-postgresql-stop:; docker-compose stop $(POSTGRESQL_SERVICE_NAME)
-postgresql-rm: postgresql-stop; docker-compose rm -f $(POSTGRESQL_SERVICE_NAME)
+db-build:; docker-compose build $(POSTGRESQL_SERVICE_NAME)
+db-logs:; docker-compose logs -f $(POSTGRESQL_SERVICE_NAME)
+db-sh:; docker-compose exec $(POSTGRESQL_SERVICE_NAME) $(POSTGRESQL_SERVICE_SHELL)
+db-stop:; docker-compose stop $(POSTGRESQL_SERVICE_NAME)
+db-rm: db-stop; docker-compose rm -f $(POSTGRESQL_SERVICE_NAME)
 
 
 front: front-rm ## (Re)start 'front' service only (also available: 'front-[build|logs|sh|stop|rm])
