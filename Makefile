@@ -30,6 +30,9 @@ API_SERVICE_SHELL := sh
 ENGINE_SERVICE_NAME := engine
 ENGINE_SERVICE_SHELL := sh
 # ----
+CRON_SERVICE_NAME := engine_cron
+CRON_SERVICE_SHELL := sh
+# ----
 POSTGRESQL_SERVICE_NAME := db
 POSTGRESQL_SERVICE_SHELL := sh
 # ----
@@ -125,6 +128,15 @@ engine-logs:; docker-compose logs -f $(ENGINE_SERVICE_NAME)
 engine-sh:; docker-compose exec $(ENGINE_SERVICE_NAME) $(ENGINE_SERVICE_SHELL)
 engine-stop:; docker-compose stop $(ENGINE_SERVICE_NAME)
 engine-rm: engine-stop; docker-compose rm -f $(ENGINE_SERVICE_NAME)
+
+
+cron: cron-rm ## (Re)start 'cron' service only (also available: 'cron-[build|logs|sh|stop|rm])
+	docker-compose up -d $(CRON_SERVICE_NAME)
+cron-build:; docker-compose build $(CRON_SERVICE_NAME)
+cron-logs:; docker-compose logs -f $(CRON_SERVICE_NAME)
+cron-sh:; docker-compose exec $(CRON_SERVICE_NAME) $(CRON_SERVICE_SHELL)
+cron-stop:; docker-compose stop $(CRON_SERVICE_NAME)
+cron-rm: cron-stop; docker-compose rm -f $(CRON_SERVICE_NAME)
 
 
 db: db-rm ## (Re)start 'db' service only (also available: 'db-[build|logs|sh|stop|rm])

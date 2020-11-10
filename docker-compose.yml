@@ -45,6 +45,24 @@ services:
       PIPENV_DONT_LOAD_ENV: 1
     depends_on:
       - db
+    healthcheck:
+      test: "curl -f http://localhost:4041/ 2>&1 | grep true || exit 1"
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # -------------------------------------------------------------------------
+  engine_cron:
+  # -------------------------------------------------------------------------
+    build: ./services/reco_engine/docker-cron/
+    container_name: engine_cron
+    restart: on-failure
+    networks:
+      - default
+    env_file:
+      - ./services/reco_engine/.env
+    depends_on:
+      - engine
 
   # -------------------------------------------------------------------------
   db:
