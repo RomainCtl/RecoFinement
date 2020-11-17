@@ -12,7 +12,6 @@
 
 - 9 075 unique tracks
 - 729 995 user - track - rating
-- 8 474 track 1 - track 2 - similitary
 
 ### Movies
 
@@ -54,9 +53,11 @@
 
 - [MovieLens](https://grouplens.org/datasets/movielens/):: The data sets were collected over various periods of time, depending on the size of the set.
 
+- [IMDB](https://developer.imdb.com/):: All movies and series metadata
+
 ### Serie
 
-- [IMDB](https://developer.imdb.com/):: All TV series metadata
+- [IMDB](https://developer.imdb.com/):: All movies and series metadata
 
 ### Games
 

@@ -7,9 +7,17 @@ nav:
         - Welcome: users/index.md
         - Getting started: users/gettingstarted.md
     - Developers:
-        - Installation: developers/index.md
+        - Home: developers/index.md
+        - Installation:
+            - Preamble: developers/installation/index.md
+            - With docker: developers/installation/withdocker.md
+            - Without docker: developers/installation/withoutdocker.md
         - Data sources: developers/datasources.md
-        - Application architecture: developers/architecture.md
+        - Application architecture:
+            - RecoFinement: developers/architecture/index.md
+            - User Interface: developers/architecture/ui.md
+            - API: developers/architecture/api.md
+            - Recommendation Engine: developers/architecture/engine.md
         - Database: developers/database.md
     - Advise.ly:
         - About us: about.md
