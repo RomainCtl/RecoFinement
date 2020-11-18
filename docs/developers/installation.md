@@ -203,12 +203,85 @@ git lfs pull
 cd ..
 ```
 
-## Import datas
+## Environment variables
+
+In order to run correctly, the project needs to recover its configuration.
+
+!!! tip
+    If you need to generate some random string, you can use this command:
+    ```bash
+    python3 -c "import random; print(''.join(random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!%*+-:;@_') for _ in range(30)))"
+    ```
+
+### API
+
+To do so, just copy the .env.default file:
+```
+cd services/api
+cp .env.default .env
+```
+Then replace the values, and in particular the variables for the connection to the database.
 
 === "With docker"
-    !!! info
-        The database schema is created with the api (with an ORM)
+    Generate some random string for `DB_USER_LOGIN`, `DB_USER_PASSWORD`, `ENGINE_APIKEY` and `SECRET_KEY`
 
+=== "Without docker"
+    You need to create `recofinement` database, when you created this one, you must have entered a user who owns this database. `DB_USER_LOGIN` and `DB_USER_PASSWORD` variables are its identifiers.
+
+    Generate some random string for `SECRET_KEY` and `ENGINE_APIKEY`.
+
+!!! warning
+    This api uses some external services.
+
+    1. Mailjet (more information [here](../external_services/mailjet))
+
+        This services is used to send mail to users.
+        You need to have a mailjet account and to recuperate the __public api key__ and the __private api key__.
+
+    2. Spotify (more information [here](../external_services/spotify))
+
+        Recofinement application allow the user to link his/her account to his/her spotify account (*for musics data*).
+        To do this, you need to have a spotify developers account and to recuperate the __client id__ and __client secret__.
+
+    3. IMDB (more information [here](../external_services/imdb))
+
+        Recofinement application allow the user to link his/her account to his/her imdb account (*for movies and series data*).
+        To do this, you need to have a imdb developers account and to recuperate the __client token__.
+
+    4. Google Books (more information [here](../external_services/gbooks))
+
+        Recofinement application allow the user to link his/her account to his/her google account (*for books data*).
+
+    You will find more information on their respective pages.
+
+    Anyway, you can use __Recofinement__ without these features, users will simply not be able to receive email, and will not be able to link their account to the services mentioned.
+
+### Engine
+
+As before, just copy the .env.default file:
+```
+cd services/reco_engine
+cp .env.default .env
+```
+Then replace the values.
+
+You only need to set `DB_USER_LOGIN`, `DB_USER_PASSWORD`, `FLASK_SECRET` and `API_TOKEN` variables.
+
+`FLASK_SECRET` must be a random string (can also use the command above).
+
+`DB_USER_LOGIN` and `DB_USER_PASSWORD` are the same as those used for the __api__.
+
+`API_TOKEN` corresponds to the variable `ENGINE_APIKEY` in the __api__.
+
+## Import datas
+
+!!! info
+    The database schema is created with the api (with an ORM)
+
+!!! danger
+    Depending on the performance of the machine you are using, this operation may take some time (__several hours__).
+
+=== "With docker"
     1. Build docker image for the database and the api
     ```
     make db-build api-build
@@ -228,12 +301,21 @@ cd ..
         ```
 
 === "Without docker"
-    *coming soon*
-
-
-## Environment variables
-
-TODO
+    1. Make sure that the database service is running (*with a `recofinement` database created*).
+    2. Let's create the database schema:
+    ```bash
+    cd services/api
+    make init
+    make db-update
+    cd  ../..
+    ```
+    3. Edit the importation script:
+    ```bash
+    cd datas
+    # Replace "<pwd>" by the current absolute path (important!)
+    sed -i "s#FROM '#FROM '<pwd>#g" script.sql
+    ```
+    4. Execute this script on your database
 
 ## Usage
 
@@ -289,4 +371,47 @@ TODO
     ```
 
 === "Without docker"
-    *coming soon*
+    __UI Servive:__
+
+    1. Install dependencies
+    ```
+    make init
+    ```
+    2. Serve locally the development build (with hot-reloads)
+    ```bash
+    make serve
+    # or
+    ng serve
+    ```
+
+    __API Service:__
+
+    1. Install dependencies
+    ```
+    make init
+    ```
+    2. Update database to the last migration (or initialize it if it does not exist)
+    ```
+    make db-update
+    ```
+    3. Serve locally the development build
+    ```
+    make serve
+    ```
+
+    __Engine Servive:__
+
+    1. Install dependencies
+    ```
+    make init
+    ```
+    2. Serve locally the development build
+    ```bash
+    make serve
+    ```
+
+
+!!! tip
+    If you want to know more about the available orders and how you can contribute to the project, we invite you to look at the 'README.md' files of each repositories.
+
+    You can access it by clicking on the github button at the top right of this site.

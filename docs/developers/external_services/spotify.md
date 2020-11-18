@@ -1,0 +1,1 @@
+TODO : describe what is it, why we use it and how to create an Spotify developers account.
