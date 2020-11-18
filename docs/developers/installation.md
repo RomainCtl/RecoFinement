@@ -186,7 +186,7 @@ We advise you to use this [guide](./withoutdocker) in the following cases:
 
 ## Clone project
 
-We use a micro-services architecture (*[more information in this section](../../architecture)*). We have a "master project" which has all services as sub-modules.
+We use a micro-services architecture (*[more information in this section](../architecture)*). We have a "master project" which has all services as sub-modules.
 
 Clone the "master project" and follow these command:
 ```bash
