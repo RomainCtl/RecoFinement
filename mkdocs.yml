@@ -13,11 +13,17 @@ nav:
             - With docker: developers/installation/withdocker.md
             - Without docker: developers/installation/withoutdocker.md
         - Data sources: developers/datasources.md
-        - Application architecture:
-            - RecoFinement: developers/architecture/index.md
-            - User Interface: developers/architecture/ui.md
-            - API: developers/architecture/api.md
-            - Recommendation Engine: developers/architecture/engine.md
+        - Architecture: developers/architecture.md
+        - Application Services:
+            - User Interface: developers/services/ui.md
+            - API: developers/services/api.md
+            - Recommendation Engine: developers/services/engine.md
+            - Nginx: developers/services/nginx.md
+        - External Services:
+            - Mailjet: developers/external_services/mailjet.md
+            - Spotify: developers/external_services/spotify.md
+            - IMDB: developers/external_services/imdb.md
+            - Google Books: developers/external_services/gbooks.md
         - Database: developers/database.md
     - Advise.ly:
         - About us: about.md

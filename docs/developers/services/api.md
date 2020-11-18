@@ -66,3 +66,6 @@ You will find more informaiton about JWT in [official JWT website](https://jwt.i
 ### Api Architecture Schema
 
 ![Api Architecture](../../assets/images/api_architecture.png)
+
+!!! info
+    We use external services to send mail and to link user account, more information [here](../../external_services/mailjet)
