@@ -1,3 +1,11 @@
+This service is the backend. It is the brain of the application, responsible for managing user access and actions.
+
+We choose to use __JWT__ (Json Web Token) for the authentification. When the user successfully logs in using thei credentials, a JWT wil be returned. The returned token is signed using a private secret.
+
+We have chosen to use __bcrypt__ to store passwords. It is a password hashing function based on __blowfish__ cipher. It incorporate a __salt__ to protect against rainbow table attacks. It is resistant to brute-force search attacks even with increasing computation power.
+
+## Techonologies
+
 We use Flask web framework, it is a micro framework written in Python. It is classified as a micro framework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
 
 However, Flask supports extensions that can add application features as if they were implemented in Flask itself.
@@ -63,7 +71,7 @@ Flask JWT extended is an open source Flask extension that provides JWT support.
 You will find more informaiton about JWT in [official JWT website](https://jwt.io/).
 
 
-### Api Architecture Schema
+## Api Architecture Schema
 
 ![Api Architecture](../../assets/images/api_architecture.png)
 
