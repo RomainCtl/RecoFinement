@@ -84,11 +84,105 @@ We advise you to use this [guide](./withoutdocker) in the following cases:
         Docker Compose is installed as part of [Docker for Mac](https://docs.docker.com/docker-for-mac/install/). So you only have to install Docker for MAC.
 
 === "Development environment"
+    !!! warning
+        This guide may not work on your environment, if this is the case, please refer to the official sites of the outbuildings.
+
+        This guide is only intended to help you with the installation, but not with the configuration of the dependencies.
+
     In order to be able to make changes to the application or  to access the database via an interface, you must have the necessary tools to run the application.
 
     1. `make`
     2. `git` & `git lfs` (Large File Storage)
-    3. *coming soon*
+    3. `python`>=3.8, `pip` and `pipenv`
+    4. `npm`
+    5. `postgresql`>=10
+    6. `java`>=11
+
+    === "Linux (Debian)"
+        `make` is normally installed by default.
+
+        Install `git` and `git-lfs`:
+        ```bash
+        apt install git git-lfs
+        git lfs install
+        ```
+
+        Python 3.8, pip & pipenv
+        ```
+        apt install python3.8 python3-pip
+        python3 -m pip install pipenv
+        ```
+
+        !!! tip
+            If you have more than one version of Python installed on your machine, the `python3` command may execute a different version,
+
+            See : [https://jcutrer.com/linux/upgrade-python37-ubuntu1810](https://jcutrer.com/linux/upgrade-python37-ubuntu1810) (taking into account the desired version).
+
+        Npm
+        ```
+        apt install nodejs
+        ```
+
+        PostgreSQL
+        ```
+        apt install postgresql postgresql-client
+        ```
+
+        Java
+        ```
+        apt install openjdk-11-jre
+        ```
+
+    === "Windows"
+        !!! important
+            __We advise you to install:__
+
+            1. [Choco](https://chocolatey.org/docs/installation), software management for windows
+            2. [Cmder](https://cmder.net/), it is a command line tool, it allows to replace advantageously cmd provided by default by Windows.
+
+        Make
+        ```
+        choco install -y make
+        ```
+
+        Download `git` from [here](https://git-scm.com/download/win) and follow the instruction.
+
+        Download `git lfs` from [here](https://github.com/git-lfs/git-lfs/releases/download/v2.12.1/git-lfs-windows-v2.12.1.exe) and:
+        ```
+        git lfs install
+        ```
+
+        Python3.8 [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/), do not forget to tick the box "add to path".
+
+        Npm, included with NodeJS [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+
+        PostgreSQL [https://www.postgresql.org/download/](https://www.postgresql.org/download/)
+
+        Java [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+
+    === "Mac"
+        For `make`, you will have to install the "Developer Tools" that are provided as optional packages in OS X installation disks.
+
+        `git` is normaly installed by default, try:
+        ```
+        git --version
+        ```
+        on  your terminal, if it is not already installed, it will ask you to do so.
+
+        Install `git-lfs`:
+        ```
+        brew install git-lfs
+        git lfs install
+        ```
+
+        Python 3.8
+        [https://www.python.org/downloads/mac-osx/](https://www.python.org/downloads/mac-osx/)
+
+        Npm, included with NodeJS [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+
+        PostgreSQL [https://www.postgresql.org/download/](https://www.postgresql.org/download/)
+
+        Java [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)k install adoptopenjdk11
 
 ## Clone project
 
@@ -123,7 +217,6 @@ cd ..
     ```
     make db api
     ```
-
     3. Import datas
     ```
     make import-data
@@ -136,6 +229,11 @@ cd ..
 
 === "Without docker"
     *coming soon*
+
+
+## Environment variables
+
+TODO
 
 ## Usage
 
