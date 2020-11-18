@@ -5,7 +5,7 @@
 
 In a production environment, all you need is a docker.
 
-We advise you to use this [guide](./withdocker) in the following cases:
+We advise you to use this environment in the following cases:
 
 * To deploy the application on a server
 * To test the application locally (in your computer)
@@ -16,7 +16,7 @@ We advise you to use this [guide](./withdocker) in the following cases:
 
 In a development environment, there will be several dependencies to install.
 
-We advise you to use this [guide](./withoutdocker) in the following cases:
+We advise you to use this environment in the following cases:
 
 * To contribute to the project with hot reloading
 * If you want to access the database via an interface
