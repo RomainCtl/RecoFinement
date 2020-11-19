@@ -18,3 +18,5 @@ Go in __[Application services](./services/ui)__ part if you want to learn more a
 Go in __[External services](./external_services/mailjet)__ part if you want to find out which services *Recofinement* uses.
 
 Go in __[Database](./database)__ part if you want to understand how *Recofinement* stores data.
+
+*A search bar (top right) allows you to search for specific information in this documentation. To facilitate your reading, it is possible to enlarge the images by clicking on them.*
