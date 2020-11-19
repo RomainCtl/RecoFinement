@@ -1,3 +1,5 @@
+[See the repository](https://github.com/RomainCtl/RecoFinement-ui)
+
 This service is the entrance door for users, it is the interface that will allow them to use the entire application.
 
 It must represent the graphical identity of the application.

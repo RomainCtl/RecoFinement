@@ -1,3 +1,5 @@
+[See the repository](https://github.com/RomainCtl/RecoFinement-api)
+
 This service is the backend. It is the brain of the application, responsible for managing user access and actions.
 
 We choose to use __JWT__ (Json Web Token) for the authentification. When the user successfully logs in using thei credentials, a JWT wil be returned. The returned token is signed using a private secret.
