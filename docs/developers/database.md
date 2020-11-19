@@ -214,7 +214,7 @@ A user can create a group, and add other user to this group, the objective is to
 
 ### User Interests
 
-A user can like or not a genre. A genre can be linked to another genre like content similarity.
+A user can like or not a genre.
 
 ![Recofinement user interests](../assets/images/Recofinement_user_interests.png)
 

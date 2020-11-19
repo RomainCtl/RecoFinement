@@ -64,7 +64,7 @@ We advise you to use this environment in the following cases:
 
         !!! note
             An Oracle VM Virtualbox will start and you will see it, you do not need to log on to it.
-            The author of this repository chose to leave the VM window open so as not to forget to switch it off before turning off the computer.
+            The author of this repository chose to leave the VM window open to do not forget to switch it off before turning off the computer.
 
         !!! tip
             To use docker, do not forget to define the environment variables as the following: `./setenv-docker.bat`.
@@ -185,7 +185,7 @@ We advise you to use this environment in the following cases:
 
         PostgreSQL [https://www.postgresql.org/download/](https://www.postgresql.org/download/)
 
-        Java [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)k install adoptopenjdk11
+        Java [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 
 ## Clone project
 
@@ -234,28 +234,12 @@ Then replace the values, and in particular the variables for the connection to t
     Generate some random string for `SECRET_KEY` and `ENGINE_APIKEY`.
 
 !!! warning
-    This api uses some external services.
+    This api uses some external services, and you need to configure them. You will find a guide on their respective pages:
 
-    1. Mailjet (more information [here](../external_services/mailjet))
-
-        This services is used to send mail to users.
-        You need to have a mailjet account and to recuperate the __public api key__ and the __private api key__.
-
-    2. Spotify (more information [here](../external_services/spotify))
-
-        Recofinement application allow the user to link his/her account to his/her spotify account (*for musics data*).
-        To do this, you need to have a spotify developers account and to recuperate the __client id__ and __client secret__.
-
-    3. TMDB (more information [here](../external_services/tmdb))
-
-        Recofinement application allow the user to link his/her account to his/her tmdb account (*for movies and series data*).
-        To do this, you need to have a tmdb developers account and to recuperate the __client token__.
-
-    4. Google Books (more information [here](../external_services/gbooks))
-
-        Recofinement application allow the user to link his/her account to his/her google account (*for books data*).
-
-    You will find more information on their respective pages.
+    1. [Mailjet](../external_services/mailjet)
+    2. [Spotify](../external_services/spotify)
+    3. [TMDB](../external_services/tmdb)
+    4. [Google Books](../external_services/gbooks)
 
     Anyway, you can use __Recofinement__ without these features, users will simply not be able to receive email nor to link their account to the services mentioned.
 

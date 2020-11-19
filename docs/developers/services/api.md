@@ -6,8 +6,6 @@ We choose to use __JWT__ (Json Web Token) for the authentification. When the use
 
 We have chosen to use __bcrypt__ to store passwords. It is a password hashing function based on __blowfish__ cipher. It incorporate a __salt__ to protect against rainbow table attacks. It is resistant to brute-force search attacks even with increasing computation power.
 
-TODO recommendation request
-
 ## Techonologies
 
 We use Flask web framework, it is a micro framework written in Python. It is classified as a micro framework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
