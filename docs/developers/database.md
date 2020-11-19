@@ -71,7 +71,7 @@
 | developers | String | developers company name |
 | publishers | String | publisher company name |
 | price | String |  |
-| recommendations | String | Number of user recommendations |
+| recommendations | Integer | Number of user recommendations |
 | release_date | String |  |
 | rating | Float | Average rating |
 | rating_count | Integer | Number of user rating |
@@ -201,7 +201,7 @@ Apart from [Application](#application) and [Book](#book), all the others content
 ![Recofinement content genre schema](../assets/images/Recofinement_content_genres.png)
 
 !!! caution
-    * We do not have any data allowing us to define the genre or genres of a [book](#book).
+    * We do not have any data allowing us to define the genre of a [book](#book).
     * And [applications](#application) are linked to only one genre.
 
 

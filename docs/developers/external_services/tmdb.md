@@ -1,5 +1,3 @@
-TODO : describe what is it, why we use it and how to create an IMDB developers account.
-
 TMDB (The Movie Database) is a community built movie and TV database.
 
 !!! hint "The user can link his tmdb account to Recofinement."
