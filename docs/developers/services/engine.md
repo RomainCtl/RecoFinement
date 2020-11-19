@@ -82,6 +82,8 @@ From this list, we recover their similars content. The more an item is liked, th
 
 ![Collaborative filtering](../../../assets/images/collaborative_filtering.png)
 
+#### Alternating Least Squares
+
 The main purpose of this engine is to recommend items based on similar users preferences.
 
 The first step is to recover all metadata between user and item. This is why it is the most resource-intensive engine (due to size of datas).
