@@ -53,11 +53,11 @@
 
 - [MovieLens](https://grouplens.org/datasets/movielens/): The data sets were collected over various periods of time, depending on the size of the set.
 
-- [IMDB](https://developer.imdb.com/): All movies and series metadata
+- [TMDB](https://www.themoviedb.org/): All movies and series metadata
 
 ### Serie
 
-- [IMDB](https://developer.imdb.com/): All movies and series metadata
+- [TMDB](https://www.themoviedb.org/): All movies and series metadata
 
 ### Games
 
