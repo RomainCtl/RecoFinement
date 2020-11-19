@@ -86,9 +86,9 @@ From this list, we recover their similars content. The more an item is liked, th
 
 The main purpose of this engine is to recommend items based on similar users preferences.
 
-The first step is to recover all metadata between user and item. This is why it is the most resource-intensive engine (due to size of datas).
+The first step is to recover all user-item-rating tuples. This is why it is the most resource-intensive engine (due to size of datas).
 
-This engine do not use User-based and Item-based approach. But it uses __Alternating Least Squares__ (ALS). __ALS__ matrix factorisation attemps to estimate the ratings matrix R as the product of two lower-rank matrices, X and Y, i.e. X * Yt = R. Typically these approximations are called __'factor' matrices__. The general approach is iterative. During each iteration, one of the factor matrices is held constant, while the other is solved for using least squares. The newly-solved factor matrix is then held constant while solving for the other factor matrix.
+This engine do not use User-based or Item-based approach, but  __Alternating Least Squares__ (ALS) approch. __ALS__ matrix factorisation attemps to estimate the ratings matrix R as the product of two lower-rank matrices, X and Y, i.e. X * Yt = R, with t as a parameter defined by the model. Typically these approximations are called __'factor' matrices__. The general approach is iterative. During each iteration, one of the factor matrices is held constant, while the other is solved for using least squares. The newly-solved factor matrix is then held constant while solving for the other factor matrix.
 
 So, with these metadata, we __build__ an ALS model and fitting data.
 
