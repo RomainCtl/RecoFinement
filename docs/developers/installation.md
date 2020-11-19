@@ -234,28 +234,12 @@ Then replace the values, and in particular the variables for the connection to t
     Generate some random string for `SECRET_KEY` and `ENGINE_APIKEY`.
 
 !!! warning
-    This api uses some external services.
+    This api uses some external services, and you need to configure them. You will find a guide on their respective pages:
 
-    1. Mailjet (more information [here](../external_services/mailjet))
-
-        This services is used to send mail to users.
-        You need to have a mailjet account and to recuperate the __public api key__ and the __private api key__.
-
-    2. Spotify (more information [here](../external_services/spotify))
-
-        Recofinement application allow the user to link his/her account to his/her spotify account (*for musics data*).
-        To do this, you need to have a spotify developers account and to recuperate the __client id__ and __client secret__.
-
-    3. TMDB (more information [here](../external_services/tmdb))
-
-        Recofinement application allow the user to link his/her account to his/her tmdb account (*for movies and series data*).
-        To do this, you need to have a tmdb developers account and to recuperate the __client token__.
-
-    4. Google Books (more information [here](../external_services/gbooks))
-
-        Recofinement application allow the user to link his/her account to his/her google account (*for books data*).
-
-    You will find more information on their respective pages.
+    1. [Mailjet](../external_services/mailjet)
+    2. [Spotify](../external_services/spotify)
+    3. [TMDB](../external_services/tmdb)
+    4. [Google Books](../external_services/gbooks)
 
     Anyway, you can use __Recofinement__ without these features, users will simply not be able to receive email, and will not be able to link their account to the services mentioned.
 
