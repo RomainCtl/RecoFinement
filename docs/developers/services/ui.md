@@ -4,7 +4,7 @@ This service is the entrance door for users, it is the interface that will allow
 
 It must represent the graphical identity of the application.
 
-!!! seealso
+!!! see also
     You can see the user part of this documentation for more information.
 
 ## Technologies
@@ -13,7 +13,7 @@ We use [Angular](https://angular.io/), it is a TypeScript-based open-source web 
 
 We use Material Design components for Angular : [Material Angular](https://material.angular.io/) to simplify UI components creation.
 
-For style, we use [Angular Boostrap](https://ng-bootstrap.github.io/), it is an angular widgets using only Bootstrap 4 CSS.
+For style, we use [Angular Boostrap](https://ng-bootstrap.github.io/), it is an angular widget using only Bootstrap 4 CSS.
 
 [Bootstrap](https://getbootstrap.com/) is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
 

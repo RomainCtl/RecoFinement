@@ -1,5 +1,5 @@
 !!! important
-    We have planned several installation methods for this project, it is nevertheless recommended to use a __linux environment__.
+    We have planned several installation methods for this project, it is nevertheless recommended using a _Linux environment__.
 
 !!! important
     It is recommended to have at least __20 GB of free space__ on your machine (The database takes up a little more than 11 GB).
@@ -72,7 +72,7 @@ We advise you to use this environment in the following cases:
     === "Mac"
         For `make`, you will have to install the "Developer Tools" that are provided as optional packages in OS X installation disks.
 
-        `git` is normaly installed by default, try:
+        `git` is normally installed by default, try:
         ```
         git --version
         ```
@@ -141,7 +141,7 @@ We advise you to use this environment in the following cases:
             __We advise you to install:__
 
             1. [Choco](https://chocolatey.org/docs/installation), software management for windows
-            2. [Cmder](https://cmder.net/), it is a command line tool, it allows to replace advantageously cmd provided by default by Windows.
+            2. [Cmder](https://cmder.net/), it is a command-line tool, it allows to replace advantageously cmd provided by default by Windows.
 
         Make
         ```
@@ -166,7 +166,7 @@ We advise you to use this environment in the following cases:
     === "Mac"
         For `make`, you will have to install the "Developer Tools" that are provided as optional packages in OS X installation disks.
 
-        `git` is normaly installed by default, try:
+        `git` is normally installed by default, try:
         ```
         git --version
         ```
@@ -189,9 +189,9 @@ We advise you to use this environment in the following cases:
 
 ## Clone project
 
-We use a micro-services architecture (*[more information in this section](../architecture)*). We have a "master project" which has all services as sub-modules.
+We use a micro-service architecture (*[more information in this section](../architecture)*). We have a "master project" which has all services as sub-modules.
 
-Clone the "master project" and follow these command:
+Clone the "master project" and follow these commands:
 ```bash
 git clone https://github.com/RomainCtl/RecoFinement.git
 ```
@@ -199,7 +199,7 @@ Imports git submodule (services)
 ```
 make init
 ```
-Import our datas (may take some time depending on your internet connection)
+Import our data (may take some time depending on your internet connection)
 ```
 cd ./datas
 git lfs pull
@@ -260,7 +260,7 @@ You only need to set `DB_USER_LOGIN`, `DB_USER_PASSWORD`, `FLASK_SECRET` and `AP
 
 `API_TOKEN` corresponds to the variable `ENGINE_APIKEY` in the __api__.
 
-## Import datas
+## Import data
 
 !!! info
     The database schema is created with the api (with an ORM)
@@ -273,11 +273,11 @@ You only need to set `DB_USER_LOGIN`, `DB_USER_PASSWORD`, `FLASK_SECRET` and `AP
     ```
     make db-build api-build
     ```
-    2. Start databse and api container
+    2. Start database and api container
     ```
     make db api
     ```
-    3. Import datas
+    3. Import data
     ```
     make import-data
     ```
@@ -315,7 +315,7 @@ You only need to set `DB_USER_LOGIN`, `DB_USER_PASSWORD`, `FLASK_SECRET` and `AP
         DOCKER_IP=192.168.56.10
         ```
 
-    1. Build docker image from source (all services)
+    1. Build docker image from sources (all services)
     ```
     make build
     ```
@@ -358,7 +358,7 @@ You only need to set `DB_USER_LOGIN`, `DB_USER_PASSWORD`, `FLASK_SECRET` and `AP
     ```
 
 === "Without docker"
-    __UI Servive:__
+    __UI Service:__
 
     1. Install dependencies
     ```
@@ -386,7 +386,7 @@ You only need to set `DB_USER_LOGIN`, `DB_USER_PASSWORD`, `FLASK_SECRET` and `AP
     make serve
     ```
 
-    __Engine Servive:__
+    __Engine Service:__
 
     1. Install dependencies
     ```
@@ -399,6 +399,6 @@ You only need to set `DB_USER_LOGIN`, `DB_USER_PASSWORD`, `FLASK_SECRET` and `AP
 
 
 !!! tip
-    If you want to know more about the available orders and how you can contribute to the project, we invite you to look at the 'README.md' files of each repositories.
+    If you want to know more about the available orders and how you can contribute to the project, we invite you to look at the 'README.md' files of each repository.
 
     You can access it by clicking on the github button at the top right of this site.

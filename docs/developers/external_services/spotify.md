@@ -8,7 +8,7 @@ Recofinement uses spotify to __listen to music__, but also to retrieve __user pr
 
 Recofinement retrieves on each connection:
 
-* the top 20 musics listened to by the user,
+* the top 20 music listened to by the user,
 * the last 20 pieces of music listened to,
 * the music from the first 20 playlists
 
@@ -16,7 +16,7 @@ Recofinement retrieves on each connection:
 
 To make these features work, you can follow this guide:
 
-1. Create a Spotify user account (Prenium or Free). To do that, simply sign up at [http://www.spotify.com/](http://www.spotify.com/)
+1. Create a Spotify user account (Premium or Free). To do that, simply sign up at [http://www.spotify.com/](http://www.spotify.com/)
 3. Register your application (Recofinement) at [Register app page](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app) and retrieve your __client id__ and __client secret__.
 
 !!! hint

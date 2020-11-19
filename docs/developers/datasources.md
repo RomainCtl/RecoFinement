@@ -15,14 +15,14 @@
 
 ### Movies
 
-- 58 099 unqiue movies
+- 58 099 unique movies
 - 27 753 445 user - movie - rating
 
 ### Serie
 
 - 73 504 unique series
 - 5 171 349 unique episodes
-- 86 389 462 user - serie - rating
+- 86 389 462 user - series - rating
 
 ### Games
 
@@ -61,7 +61,7 @@
 
 ### Games
 
-- [Steam video games Kaggle](https://www.kaggle.com/tamber/steam-video-games/data): This dataset is a list of user behaviors, with columns: user-id, game-title, behavior-name, value. The behaviors included are 'purchase' and 'play'.
+- [Steam video games Kaggle](https://www.kaggle.com/tamber/steam-video-games/data): This dataset is a list of user behaviors, with columns: user-id, game-title, behavior-name, value. The included behaviors  are 'purchase' and 'play'.
 - [Steam app list](https://api.steampowered.com/ISteamApps/GetAppList/v2/): List of (appid, name) steam app.
 - [Steam open API](https://store.steampowered.com/api/appdetails/?appids=1): Api that provides application details from app_id.
 

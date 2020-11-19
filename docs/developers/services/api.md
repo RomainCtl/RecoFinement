@@ -1,14 +1,14 @@
 [See the repository](https://github.com/RomainCtl/RecoFinement-api)
 
-This service is the backend. It is the brain of the application, responsible for managing user access and actions.
+This service is the BackEnd. It is the brain of the application, responsible for managing user access and actions.
 
-We choose to use __JWT__ (Json Web Token) for the authentification. When the user successfully logs in using thei credentials, a JWT wil be returned. The returned token is signed using a private secret.
+We choose to use __JWT__ (Json Web Token) for the authentification. When the user successfully logs in using their credentials, a JWT will be returned. The returned token is signed using a private secret.
 
 We have chosen to use __bcrypt__ to store passwords. It is a password hashing function based on __blowfish__ cipher. It incorporate a __salt__ to protect against rainbow table attacks. It is resistant to brute-force search attacks even with increasing computation power.
 
 ## Techonologies
 
-We use Flask web framework, it is a micro framework written in Python. It is classified as a micro framework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
+We use Flask web framework, it is a micro framework written in Python. It is classified as a micro framework because it does not require specific tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
 
 However, Flask supports extensions that can add application features as if they were implemented in Flask itself.
 
@@ -62,7 +62,7 @@ The official documentation can be found at [flask-cors](https://flask-cors.readt
 
 Flask cors is a Flask extension for handling Cross Origin Resource Sharing (CORS), making cross-origin AJAX possible.
 
-You will find more information about CORS in [mozilla developer doc](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
+You will find more information about CORS in [Mozilla developer doc](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
 
 #### Flask JWT extended
 
@@ -70,7 +70,7 @@ The official documentation can be found at [flask-jwt-extende](https://flask-jwt
 
 Flask JWT extended is an open source Flask extension that provides JWT support.
 
-You will find more informaiton about JWT in [official JWT website](https://jwt.io/).
+You will find more information about JWT in [official JWT website](https://jwt.io/).
 
 
 ## Api Architecture Schema
@@ -78,4 +78,4 @@ You will find more informaiton about JWT in [official JWT website](https://jwt.i
 ![Api Architecture](../../assets/images/api_architecture.png)
 
 !!! info
-    We use external services to send mail and to link user account, more information [here](../../external_services/mailjet)
+    We use external services to send mail and to link user accounts, more information [here](../../external_services/mailjet).

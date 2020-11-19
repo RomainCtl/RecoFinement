@@ -1,7 +1,7 @@
 !!! summary
     The purpose of this part of the documentation is to explain how to install the application, to describe how it works and its architecture.
 
-    We will also describe the data that we have recovered to make recommendation and the sources.
+    We will also describe the data that we have recovered to make recommendations and the sources.
 
     We will describe the services we use as well as the services we have put in place.
 
@@ -19,4 +19,4 @@ Go in __[External services](./external_services/mailjet)__ part if you want to f
 
 Go in __[Database](./database)__ part if you want to understand how *Recofinement* stores data.
 
-*A search bar (top right) allows you to search for specific information in this documentation. To facilitate your reading, it is possible to enlarge the images by clicking on them.*
+*A search bar (top right) allows you to search for specific information in this documentation. To facilitate your reading, it is possible to make the images bigger by clicking on them.*

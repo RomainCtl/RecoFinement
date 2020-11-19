@@ -1,7 +1,7 @@
 !!! important
-    We use __PostgreSQL__ as DBMS *(Data Base Management System)*. You will find more informations about it [here](https://www.postgresql.org/).
+    We use __PostgreSQL__ as DBMS *(Data Base Management System)*. You will find more information about it [here](https://www.postgresql.org/).
 
-## Media objects definition
+## Media object definitions
 
 ### Application
 
@@ -10,10 +10,10 @@
 | __app_id__ | __Integer__ | __Application identifier__ |
 | name | String | Application name |
 | categorie | Integer | linked categorie ([genre](#genre)) |
-| rating | Float | Average of user's rating |
+| rating | Float | Average of user ratings |
 | reviews | String | Number of reviews |
 | size | String | Application size
-| installs | String | Number of installations by unique user |
+| installs | String | Number of installations by unique users |
 | type | String | 'Paid' or 'Free' |
 | price | String | Price |
 | content_rating | String | application classification (by age group) |
@@ -39,7 +39,7 @@
 | image_url_m | String | URL for medium image size |
 | image_url_l | String | URL for large image size |
 | rating | Float | Average rating |
-| rating_count | Integer | Number of user rating |
+| rating_count | Integer | Number of user ratings |
 | popularity_score | Float | popularity score (see [here](../services/engine/#popularity)) |
 
 ### Episode
@@ -55,7 +55,7 @@
 | season_number | Integer |  |
 | episode_number | Integer |  |
 | rating | Float | Average rating |
-| rating_count | Integer | Number of user rating |
+| rating_count | Integer | Number of user ratings |
 
 
 ### Game
@@ -74,7 +74,7 @@
 | recommendations | Integer | Number of user recommendations |
 | release_date | String |  |
 | rating | Float | Average rating |
-| rating_count | Integer | Number of user rating |
+| rating_count | Integer | Number of user ratings |
 | popularity_score | Float | popularity score (see [here](../services/engine/#popularity)) |
 
 ### Movie
@@ -92,7 +92,7 @@
 | imdbid | String | IMDB movie identifier |
 | tmdbid | String | TMDB movie identifier |
 | rating | Float | Average rating |
-| rating_count | Integer | Number of user rating |
+| rating_count | Integer | Number of user ratings |
 | cover | String | Cover url |
 | plot_outline | String | synopsis |
 | popularity_score | Float | popularity score (see [here](../services/engine/#popularity)) |
@@ -110,7 +110,7 @@
 | directors | Text | List of directors separated by ',' |
 | actors | Text | List of actors separated by ',' |
 | rating | Float | Average rating |
-| rating_count | Integer | Number of user rating |
+| rating_count | Integer | Number of user ratings |
 | cover | String | Cover url |
 | plot_outline | String | synopsis |
 | popularity_score | Float | popularity score (see [here](../services/engine/#popularity)) |
@@ -124,10 +124,10 @@
 | year | Integer | Release year |
 | artist_name | String | Artist name |
 | release | String | Realse (album) associated with this track |
-| track_mmid | String | Million Song track indentifier |
+| track_mmid | String | Million Song track identifier |
 | recording_mbid | UUID | MusicBrainz track identifier |
 | rating | Float | Average rating |
-| rating_count | Integer | Number of user rating |
+| rating_count | Integer | Number of user ratings |
 | spotify_id | String | Track spotify id |
 | covert_art_url | Text |  |
 | popularity_score | Float | popularity score (see [here](../services/engine/#popularity)) |
@@ -175,9 +175,9 @@
 
 ## Schema
 
-### User - Content realtionship
+### User - Content relationship
 
-All content is linked with user by `meta_user_X` table, it will define all metadata between a content and the user:
+All content is linked with users by `meta_user_X` table, it will define all metadata between a content and the user:
 
 Example:
 
@@ -189,7 +189,7 @@ Example:
 
 ### Content similarity
 
-All content table have a "Many to many" relationship with itself, it store the ratio of similarity between two contents (only the highest will be stored).
+All content tables have a "Many to many" relationship with itself, it stores the ratio of similarity between two contents (only the highest will be stored).
 
 ![Recofinement content similarity schema](../assets/images/Recofinement_content_similarity.png)
 
@@ -207,7 +207,7 @@ Apart from [Application](#application) and [Book](#book), all the others content
 
 ### User social part
 
-A user can create a group, and add other user to this group, the objective is to be able to make recommendations to the group (e.g. Playlist for a party with friends).
+A user can create a group, and add other users to this group, the objective is to be able to make recommendations to the group (e.g. Playlist for a party with friends).
 
 ![Recofinement user social schema](../assets/images/recofinement_social.png)
 
@@ -221,7 +221,7 @@ A user can like or not a genre.
 
 ### Content Recommendation for users
 
-All recommendations calculated by [Recofinement-engine](../services/engine) are stored in this table. This service use multiple algorithme (called engine) to recommend a user. Each engine calculate a score between 0 and 1 between a [user](#user) and a content. The closer the score is to 1, the more relevant it will be.
+All recommendations calculated by [Recofinement-engine](../services/engine) are stored in this table. This service uses multiple algorithms (called engine) to recommend a user. Each engine calculates a score between 0 and 1 between a [user](#user) and a content. The closer the score is to 1, the more relevant it will be.
 
 !!! important
     It is not relevant to compare scores between two different engines. That's why we have a column `engine_priority`
