@@ -11,7 +11,7 @@ This cron will send a request to this service to refresh recommendations.
 
 We will explain how a request is processed in Recofinement-engine. Below is an explanatory diagram.
 
-![Engine processing a request](../../../assets/images/engine_processing_a_request.png)
+![Engine processing a request](../../assets/images/engine_processing_a_request.png)
 
 
 ## Engine
@@ -49,7 +49,7 @@ Lastly, we define a score between each item using __cosinus similarity__. It is 
 
 The following two systems use what the user already likes (explicitly and/or implicitly) to recommend content to the user.
 
-![Content-base filtering](../../../assets/images/content_based_filtering.png)
+![Content-base filtering](../../assets/images/content_based_filtering.png)
 
 #### From profile
 
@@ -80,7 +80,7 @@ From this list, we recover their similars content. The more an item is liked, th
 
 ### Collaborative filtering
 
-![Collaborative filtering](../../../assets/images/collaborative_filtering.png)
+![Collaborative filtering](../../assets/images/collaborative_filtering.png)
 
 #### Alternating Least Squares
 

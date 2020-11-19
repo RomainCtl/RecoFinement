@@ -12,10 +12,10 @@ We use a micro-services architecture.
 !!! tip "These two diagrams below can help you to understand how these services are organised."
 
 ## Macro architecture
-![Recofinement macro architecture](../../assets/images/recofinement_macro_arch.png)
+![Recofinement macro architecture](../assets/images/recofinement_macro_arch.png)
 
 ## Functional macro architecture
-![Recofinement functionnal macro architecture](../../assets/images/recofinement_marco_arch_funct.png)
+![Recofinement functionnal macro architecture](../assets/images/recofinement_marco_arch_funct.png)
 
 !!! tip
     You will find more informations about each services on theirs owns page.
