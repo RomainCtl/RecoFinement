@@ -185,7 +185,7 @@ We advise you to use this environment in the following cases:
 
         PostgreSQL [https://www.postgresql.org/download/](https://www.postgresql.org/download/)
 
-        Java [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)k install adoptopenjdk11
+        Java [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 
 ## Clone project
 
