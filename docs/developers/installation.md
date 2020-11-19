@@ -64,7 +64,7 @@ We advise you to use this environment in the following cases:
 
         !!! note
             An Oracle VM Virtualbox will start and you will see it, you do not need to log on to it.
-            The author of this repository chose to leave the VM window open so as not to forget to switch it off before turning off the computer.
+            The author of this repository chose to leave the VM window open to do not forget to switch it off before turning off the computer.
 
         !!! tip
             To use docker, do not forget to define the environment variables as the following: `./setenv-docker.bat`.
@@ -241,11 +241,11 @@ Then replace the values, and in particular the variables for the connection to t
     3. [TMDB](../external_services/tmdb)
     4. [Google Books](../external_services/gbooks)
 
-    Anyway, you can use __Recofinement__ without these features, users will simply not be able to receive email, and will not be able to link their account to the services mentioned.
+    Anyway, you can use __Recofinement__ without these features, users will simply not be able to receive email, and nor to link their account to the services mentioned.
 
 ### Engine
 
-As before, just copy the .env.default file:
+First, just copy the .env.default file:
 ```
 cd services/reco_engine
 cp .env.default .env
