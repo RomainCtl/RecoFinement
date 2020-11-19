@@ -19,7 +19,7 @@ nav:
         - External Services:
             - Mailjet: developers/external_services/mailjet.md
             - Spotify: developers/external_services/spotify.md
-            - IMDB: developers/external_services/imdb.md
+            - TMDB: developers/external_services/tmdb.md
             - Google Books: developers/external_services/gbooks.md
         - Database: developers/database.md
     - Advise.ly:

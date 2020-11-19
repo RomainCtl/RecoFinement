@@ -1,1 +1,0 @@
-TODO : describe what is it, why we use it and how to create an IMDB developers account.

@@ -246,10 +246,10 @@ Then replace the values, and in particular the variables for the connection to t
         Recofinement application allow the user to link his/her account to his/her spotify account (*for musics data*).
         To do this, you need to have a spotify developers account and to recuperate the __client id__ and __client secret__.
 
-    3. IMDB (more information [here](../external_services/imdb))
+    3. TMDB (more information [here](../external_services/tmdb))
 
-        Recofinement application allow the user to link his/her account to his/her imdb account (*for movies and series data*).
-        To do this, you need to have a imdb developers account and to recuperate the __client token__.
+        Recofinement application allow the user to link his/her account to his/her tmdb account (*for movies and series data*).
+        To do this, you need to have a tmdb developers account and to recuperate the __client token__.
 
     4. Google Books (more information [here](../external_services/gbooks))
 
