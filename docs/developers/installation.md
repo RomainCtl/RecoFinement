@@ -257,11 +257,11 @@ Then replace the values, and in particular the variables for the connection to t
 
     You will find more information on their respective pages.
 
-    Anyway, you can use __Recofinement__ without these features, users will simply not be able to receive email, and will not be able to link their account to the services mentioned.
+    Anyway, you can use __Recofinement__ without these features, users will simply not be able to receive email nor to link their account to the services mentioned.
 
 ### Engine
 
-As before, just copy the .env.default file:
+First, just copy the .env.default file:
 ```
 cd services/reco_engine
 cp .env.default .env
