@@ -1,5 +1,5 @@
 !!! important
-    We have planned several installation methods for this project, it is nevertheless recommended using a _Linux environment__.
+    We have planned several installation methods for this project, it is nevertheless recommended using a __Linux environment__.
 
 !!! important
     It is recommended to have at least __20 GB of free space__ on your machine (The database takes up a little more than 11 GB).

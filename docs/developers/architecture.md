@@ -2,7 +2,7 @@ We use a micro-service architecture.
 
 [Nginx service](../services/nginx) is our reverse proxy. All requests to access the application go through here.
 
-[UI service](../services/ui) is the entrance dore for users, it is the interface that will allow them to use the entire application.
+[UI service](../services/ui) is the entrance door for users, it is the interface that will allow them to use the entire application.
 
 [API service](../services/api) is the BackEnd. It is the brain of the application, responsible for managing user access and actions.
 
