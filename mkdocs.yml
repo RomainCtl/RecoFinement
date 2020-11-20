@@ -7,15 +7,28 @@ nav:
         - Welcome: users/index.md
         - Getting started: users/gettingstarted.md
     - Developers:
-        - Installation: developers/index.md
+        - Home: developers/index.md
+        - Installation: developers/installation.md
         - Data sources: developers/datasources.md
-        - Application architecture: developers/architecture.md
+        - Architecture: developers/architecture.md
+        - Application Services:
+            - User Interface: developers/services/ui.md
+            - API: developers/services/api.md
+            - Recommendation Engine: developers/services/engine.md
+            - Nginx: developers/services/nginx.md
+        - External Services:
+            - Mailjet: developers/external_services/mailjet.md
+            - Spotify: developers/external_services/spotify.md
+            - TMDB: developers/external_services/tmdb.md
+            - Google Books: developers/external_services/gbooks.md
         - Database: developers/database.md
     - Advise.ly:
         - About us: about.md
 
 theme:
     name: material
+    logo: assets/images/favicon.png
+    favicon: assets/images/favicon.png
     custom_dir: docs/assets/overrides
     language: en
     font:
@@ -36,6 +49,7 @@ markdown_extensions:
     - pymdownx.smartsymbols
     - admonition
     - pymdownx.superfences
+    - pymdownx.details
     - pymdownx.tabbed
 
 plugins:

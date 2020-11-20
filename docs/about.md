@@ -22,25 +22,25 @@ Our company is based at ENSSAT in Lannion (22), more precisely in the business i
 ## Our team
 
 ![Corentin](assets/images/corentin.png)
-BOSQUET Corentin
-    Software & design engineer
+BOSQUET Corentin:
+    *Software & design engineer*
 
 ![Romain](assets/images/romain.png)
-CHANTREL Romain
-    Project manager, Software & data analyst engineer
+CHANTREL Romain:
+    *Project manager, Software & data analyst engineer*
 
 ![Quentin](assets/images/quentin.png)
-GALLIOU Quentin
-    Cybersecurity engineer
+GALLIOU Quentin:
+    *Cybersecurity engineer*
 
 ![Yohan](assets/images/yohan.png)
-PERROT Yohan
-    Research engineer
+PERROT Yohan:
+    *Research engineer*
 
 ![Lucas](assets/images/lucas.png)
-ROLLIN Lucas
-    Communication manager & software engineer
+ROLLIN Lucas:
+    *Communication manager & software engineer*
 
 ![Clément](assets/images/clement.png)
-YOUDEC Clément
-    Scrum master & software engineer
+YOUDEC Clément:
+    *Scrum master & software engineer*
