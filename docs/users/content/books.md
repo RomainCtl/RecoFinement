@@ -2,18 +2,18 @@ Under the `Books` section you can see your recommended games.
 
 You can see more information about a specific book by clicking on the `See more` button. Then, a pop-up appears and shows the following information:
 
-- Name
-- Devloper
+- Title
+- Ratings
+- Author
 - Publisher
-- Price
-- Description
-- Release date
+- ISBN (International Standard Book Number)
+- Year
 - Cover
 
-![](../../assets/images/popup-games.jpg)
+![](../../assets/images/popup-books.jpg)
 
 !!! tip
-    You can indicate how many episodes your watched so that you can remember your progress.
+    You can indicate whether you have purchased the book or not.
 
 !!! information
-    Giving a rating to a games helps us showing you more relevant content.
+    Giving a rating to a book helps us showing you more relevant content.

@@ -16,8 +16,6 @@ You can see more information about a music by clicking on the `See more` button.
 
 ![](../../assets/images/popup-musics.jpg)
 
-Also, a search bar allows you to find the movies of your choice.
-
 !!! information
     Giving a rating to a music helps us showing you relevant content.
     

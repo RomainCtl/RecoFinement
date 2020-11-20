@@ -4,9 +4,10 @@ repo_url: https://github.com/RomainCtl/RecoFinement
 nav:
     - Home: index.md
     - Users:
+        - Home: users/index.md
         - Authentication:
-            - Signing up: users/authentication/sign-up.md
-            - Signing in: users/authentication/sign-in.md
+            - Register: users/authentication/sign-up.md
+            - Sign in: users/authentication/sign-in.md
         - Content visualisation:
             - Musics: users/content/musics.md
             - Movies: users/content/movies.md
@@ -14,6 +15,7 @@ nav:
             - Games: users/content/games.md
             - Books: users/content/books.md
             - Applications: users/content/applications.md
+            - Search content: users/content/search.md
         - Profile:
             - Manage your profile:
                 - Edit your account: users/profile/edit-account.md
