@@ -12,6 +12,7 @@ Advise.ly has two main activities, the first one is providing support to  compan
 * January 2020 : Company creation
 * February 2020 : First project -  Classified Government Project
 * June 2020 : Second project - LeaveManager
+* September 2020 : Third project : Recofinement
 
 
 ## Geographic location
@@ -40,7 +41,3 @@ PERROT Yohan:
 ![Lucas](assets/images/lucas.png)
 ROLLIN Lucas:
     *Communication manager & software engineer*
-
-![Clément](assets/images/clement.png)
-YOUDEC Clément:
-    *Scrum master & software engineer*
