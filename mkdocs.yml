@@ -22,6 +22,8 @@ nav:
                 - Manage your groups: users/profile/groups.md
                 - Third-party applications: users/profile/tpapps.md
             - Your interests: users/profile/interests.md
+        - SandBox:
+            - Features: users/sandbox/features.md
     - Developers:
         - Home: developers/index.md
         - Installation: developers/installation.md
