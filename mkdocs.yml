@@ -40,7 +40,9 @@ nav:
             - Google Books: developers/external_services/gbooks.md
         - Database: developers/database.md
         - Event Sourcing: developers/event_sourcing.md 
-        - SandBox: developers/sandbox.md
+        - SandBox: 
+            - Profile: developers/sandbox/profile.md
+            - Additional Content: developers/sandbox/additional_content.md
     - Advise.ly:
         - About us: about.md
 
