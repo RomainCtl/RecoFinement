@@ -34,9 +34,7 @@ nav:
         - Architecture: developers/architecture.md
         - Application Services:
             - User Interface: developers/services/ui.md
-            - API: 
-                - Features: developers/services/api.md
-                - Event Sourcing: developers/services/event_sourcing.md 
+            - API: developers/services/api.md
             - Recommendation Engine: developers/services/engine.md
             - Nginx: developers/services/nginx.md
             - Administrator Panel:
