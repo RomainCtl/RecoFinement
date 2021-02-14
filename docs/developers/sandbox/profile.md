@@ -18,6 +18,5 @@ Profile recommendations are created on-the-fly to be displayed as fast as possib
 
 They are made only with faststr algorithm :
 
- - Algo a
- - Algo b
- - Algo c
+ - Profile algorithm
+ - Similar Content algorithm
