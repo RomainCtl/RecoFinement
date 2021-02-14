@@ -34,20 +34,20 @@ nav:
         - Architecture: developers/architecture.md
         - Application Services:
             - User Interface: developers/services/ui.md
-            - API: developers/services/api.md
+            - API: 
+                - Features: developers/services/api.md
+                - Event Sourcing: developers/event_sourcing.md 
             - Recommendation Engine: developers/services/engine.md
             - Nginx: developers/services/nginx.md
+            - Administrator Panel:
+                - Profile: developers/sandbox/profile.md
+                - Additional Content: developers/sandbox/additional_content.md
         - External Services:
             - Mailjet: developers/external_services/mailjet.md
             - Spotify: developers/external_services/spotify.md
             - TMDB: developers/external_services/tmdb.md
             - Google Books: developers/external_services/gbooks.md
         - Database: developers/database.md
-        - Administrator Panel:
-            - Event Sourcing: developers/event_sourcing.md 
-            - SandBox: 
-                - Profile: developers/sandbox/profile.md
-                - Additional Content: developers/sandbox/additional_content.md
     - Advise.ly:
         - About us: about.md
 
