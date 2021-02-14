@@ -11,8 +11,6 @@ Profiles are user like element easy to create and to delete, used to test recomm
 | profilename | String | Profile name |
 | user_id | Integer | User id of profile creator |
 
-### Profile creation 
-![Profile creation screen](../assets/images/***.png)
 
 ## Create recommendation for this profile
 
