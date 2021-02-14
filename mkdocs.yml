@@ -22,7 +22,8 @@ nav:
                 - Manage your groups: users/profile/groups.md
                 - Third-party applications: users/profile/tpapps.md
             - Your interests: users/profile/interests.md
-        - Admin: users/admin/administration_panel.md
+        - Administrator: 
+            - Administrator Panel: users/admin/administration_panel.md
             - Sandbox: users/admin/sandbox.md
             - Media validation: users/admin/media_validation.md
     - Developers:
