@@ -16,6 +16,7 @@ nav:
             - Books: users/content/books.md
             - Applications: users/content/applications.md
             - Search content: users/content/search.md
+            - Add a media: users/content/add_media.md
         - Profile:
             - Manage your profile:
                 - Edit your account: users/profile/edit-account.md
