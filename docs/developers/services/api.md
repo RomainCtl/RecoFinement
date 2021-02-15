@@ -80,6 +80,56 @@ You will find more information about JWT in [official JWT website](https://jwt.i
 !!! info
     We use external services to send mail and to link user accounts, more information [here](../../external_services/mailjet).
 
-## Event sourcing 
 
-TODO
+## Event sourcing
+
+With the objective of improving our recommendation engine, we had the idea to launch only what is needed. And to know what is necessary, it is necessary to have a history of the different actions that have been performed between two launches of a recommendation algorithm. That's why we have implemented the "event sourcing" pattern in our api.
+
+We store media additions, modifications and deletions. And we store the additions and modifications of interactions between content and users.
+
+We have several types of events, but they all have the same basis :
+
+| Name | Type | Description |
+|---|---|---|
+| __id__ | __Integer__ | __Unique identifier__ |
+| occured_at | DateTime | date of the event |
+| occured_by | Integer | id or null |
+| object_id | Integer | event is related to this object |
+
+
+A __DeletionEvent__ has the same base, and moreover :
+
+| Name | Type | Description |
+|---|---|---|
+| ... | ... | ... |
+| model_name | String | name of the model where the event occured |
+
+
+A __ChangedEvent__ has the same base, and moreover :
+
+| Name | Type | Description |
+|---|---|---|
+| ... | ... | ... |
+| model_name | String | name of the model where the event occured |
+| attribute_name | String | name of the attribute of the model |
+| new_value | String | name value for this attribute |
+
+
+A __ApplicationAddedEvent__ has the same base, and moreover :
+
+| Name | Type | Description |
+|---|---|---|
+| ... | ... | ... |
+| name | String | app name |
+| size | String |  |
+| installs | String |  |
+| type | String |  |
+| price | String |  |
+| content_rating | String |  |
+| last_updated | String |  |
+| current_version | String |  |
+| android_version | String |  |
+| cover | String |  |
+
+!!! important
+    All __ApplicationAddedEvent__, __BookAddedEvent__, __EpisodeAddedEvent__, __GameAddedEvent__, __MovieAddedEvent__, __SerieAddedEvent__, __TrackAddedEvent__, __MetaAddedEvent__ have the same base, plus there own atributes that you can find in Database page.
