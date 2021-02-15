@@ -79,3 +79,7 @@ You will find more information about JWT in [official JWT website](https://jwt.i
 
 !!! info
     We use external services to send mail and to link user accounts, more information [here](../../external_services/mailjet).
+
+## Event sourcing 
+
+TODO

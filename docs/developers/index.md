@@ -19,8 +19,4 @@ Go in __[External services](./external_services/mailjet)__ part if you want to f
 
 Go in __[Database](./database)__ part if you want to understand how *Recofinement* stores data.
 
-Go in __[Event Sourcing](./event_sourcing)__ part if you want to understand how the event sourcing is implemented in *Recofinement*.
-
-Go in __[SandBox](./sandbox/profile)__ part if you want to understand how the sandbox work.
-
 *A search bar (top right) allows you to search for specific information in this documentation. To facilitate your reading, it is possible to make the images bigger by clicking on them.*

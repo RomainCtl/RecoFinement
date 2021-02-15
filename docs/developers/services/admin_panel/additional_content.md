@@ -2,8 +2,6 @@
 
 The sandbox allow administrator to add media content to the database. The administrator can validate the addition of the content to the database, or he can refuse it and the additional content will be deleted. The admin need `validate_media` permission to effectuate this action. 
 
-![Profile recommendaiton creation screen](../assets/images/***.png)
-
 Additional media content are different from basic content. 
 
 ### Application
