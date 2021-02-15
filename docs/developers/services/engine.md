@@ -47,6 +47,19 @@ Then, we construct a __TF-IDF__ (term frequency–inverse document frequency) ma
 
 Lastly, we define a score between each item using __cosinus similarity__. It is a measure of similarity between two vectors, it is defined to equal the cosine of the angle between them.
 
+### Create link between items
+
+Natively, we have no link between different types of content. So we decided to create a link between the following content:
+
+* movies: series, books
+* series: movies, books
+* music: series, movies
+* game : movies, series
+* books : None
+* applications: None
+
+There is no database linking items from different media. So we can only link item with the __title__. We use the same algorithm that for the [Content similarity](#content-similarity) engine, but we only use the title attribute.
+
 ### Content-base filtering
 
 The following two systems use what the user already likes (explicitly and/or implicitly) to recommend content to the user.
