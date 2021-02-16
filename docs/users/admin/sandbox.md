@@ -23,7 +23,7 @@ This feature allows the admin to add a media which was already in the Recofineme
 
 Moreover, he can edit it's metadata (the rating, review, count) by clicking directly on the data.
 
-![Edit metadata](../../assets/images/admin_content_of_test.PNG)
+![Edit metadata](../../assets/images/admin_content_of_test.jpg)
 
 ## Recommendation analysis
 
