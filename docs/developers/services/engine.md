@@ -108,3 +108,21 @@ This engine does not use User-based or Item-based approach, but  __Alternating L
 So, with these metadata, we __build__ an ALS model and fitting data.
 
 Lastly, we make recommendations based on our model, with 10 recommendations for all selected user.
+
+## Refreshment of recommendations
+
+We use crons to launch tasks.
+
+* Popularity one time a day at 2 am
+* Content similarities one time a day at 3 am
+* Link between items one time a day at 4 am
+* Collaborative filtering every 6 hours at 0min
+* From profile every 2 hours at 20min
+* From similar content every 2 hours at 50min
+* From profile for group every 12 hours at 0min
+* From similar content for group every 12 hours at 59min
+
+For each of the algorithms described above, we check whether it is really necessary to run them. Thanks to the sourcing event set up in the api ([here](../api/#event-sourcing)), we can know if there have been new interactions, or the addition of new content requiring refreshment.
+
+!!! note
+    Algorithms, which are also costly in terms of resources, are never launched for nothing.
