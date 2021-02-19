@@ -196,13 +196,11 @@ All content tables have a "Many to many" relationship with itself, it stores the
 
 ### Content genres
 
-Apart from [Application](#application) and [Book](#book), all the others content table have a "Many to many" relationship with [Genre](#genre) table.
-
 ![Recofinement content genre schema](../assets/images/Recofinement_content_genres.png)
 
 !!! caution
     * We do not have any data allowing us to define the genre of a [book](#book).
-    * And [applications](#application) are linked to only one genre.
+    * The [applications](#application) we have are linked to only one genre.
 
 
 ### User social part

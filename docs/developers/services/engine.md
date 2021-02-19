@@ -6,6 +6,8 @@ In production environement, this service uses a cron (also known has cront job).
 
 This cron will send a request to this service to refresh recommendations.
 
+Eeah recommendation algorithme can now be launch alone, to fit the need of the sandbox. 
+
 
 ## Processing of a request
 
@@ -44,6 +46,19 @@ From this, we can create a __dictionary of the vocabulary__ used. And of courses
 Then, we construct a __TF-IDF__ (term frequency–inverse document frequency) matrix. It is a numerical statistic that is intended to reflect how important a word is in a collection.
 
 Lastly, we define a score between each item using __cosinus similarity__. It is a measure of similarity between two vectors, it is defined to equal the cosine of the angle between them.
+
+### Create link between items
+
+Natively, we have no link between different types of content. So we decided to create a link between the following content:
+
+* movies: series, books
+* series: movies, books
+* music: series, movies
+* game : movies, series
+* books : None
+* applications: None
+
+There is no database linking items from different media. So we can only link item with the __title__. We use the same algorithm that for the [Content similarity](#content-similarity) engine, but we only use the title attribute.
 
 ### Content-base filtering
 
@@ -93,3 +108,21 @@ This engine does not use User-based or Item-based approach, but  __Alternating L
 So, with these metadata, we __build__ an ALS model and fitting data.
 
 Lastly, we make recommendations based on our model, with 10 recommendations for all selected user.
+
+## Refreshment of recommendations
+
+We use crons to launch tasks.
+
+* Popularity one time a day at 2 am
+* Content similarities one time a day at 3 am
+* Link between items one time a day at 4 am
+* Collaborative filtering every 6 hours at 0min
+* From profile every 2 hours at 20min
+* From similar content every 2 hours at 50min
+* From profile for group every 12 hours at 0min
+* From similar content for group every 12 hours at 59min
+
+For each of the algorithms described above, we check whether it is really necessary to run them. Thanks to the sourcing event set up in the api ([here](../api/#event-sourcing)), we can know if there have been new interactions, or the addition of new content requiring refreshment.
+
+!!! note
+    Algorithms, which are also costly in terms of resources, are never launched for nothing.

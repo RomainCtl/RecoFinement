@@ -402,3 +402,41 @@ You only need to set `DB_USER_LOGIN`, `DB_USER_PASSWORD`, `FLASK_SECRET` and `AP
     If you want to know more about the available orders and how you can contribute to the project, we invite you to look at the 'README.md' files of each repository.
 
     You can access it by clicking on the github button at the top right of this site.
+
+
+# Add the admin role to a user
+
+!!! important
+    It is preferable to have imported the data beforehand ([see here](#import-data)) and to have created a user ([register](../../users/authentication/sign-up)).
+
+=== "With docker"
+    1. Connect to your db container
+    ```
+    make db-sh
+    ```
+    2. Connect to the db
+    ```
+    psql -d <db_name> -U <user_name>
+    ```
+    3. Find your user_id
+    ```
+    SELECT user_id from public.user WHERE email = '<your email>';
+    ```
+    4. Add the admin role
+    ```
+    INSERT INTO public.user_role VALUES (<user_id>, 2);
+    ```
+
+=== "Without docker"
+    1. Connect to the db
+    ```
+    psql -d <db_name> -U <user_name>
+    ```
+    2. Find your user_id
+    ```
+    SELECT user_id from public.user WHERE email = '<your email>';
+    ```
+    3. Add the admin role
+    ```
+    INSERT INTO public.user_role VALUES (<user_id>, 2);
+    ```

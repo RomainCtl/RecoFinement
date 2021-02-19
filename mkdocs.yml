@@ -16,12 +16,17 @@ nav:
             - Books: users/content/books.md
             - Applications: users/content/applications.md
             - Search content: users/content/search.md
+            - Add a media: users/content/add_media.md
         - Profile:
             - Manage your profile:
                 - Edit your account: users/profile/edit-account.md
                 - Manage your groups: users/profile/groups.md
                 - Third-party applications: users/profile/tpapps.md
             - Your interests: users/profile/interests.md
+        - Administrator: 
+            - Administrator Panel: users/admin/administration_panel.md
+            - Sandbox: users/admin/sandbox.md
+            - Media validation: users/admin/media_validation.md
     - Developers:
         - Home: developers/index.md
         - Installation: developers/installation.md
@@ -32,6 +37,9 @@ nav:
             - API: developers/services/api.md
             - Recommendation Engine: developers/services/engine.md
             - Nginx: developers/services/nginx.md
+            - Administrator Panel:
+                - Profile: developers/services/admin_panel/profile.md
+                - Additional Content: developers/services/admin_panel/additional_content.md
         - External Services:
             - Mailjet: developers/external_services/mailjet.md
             - Spotify: developers/external_services/spotify.md
