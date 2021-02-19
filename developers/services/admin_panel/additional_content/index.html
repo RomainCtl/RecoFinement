@@ -1,0 +1,1698 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://RomainCtl.github.io/RecoFinement/developers/services/admin_panel/additional_content/">
+      
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>Additional Content - RecoFinement</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7C&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheet/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#validate-content" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://RomainCtl.github.io/RecoFinement/" title="RecoFinement" class="md-header-nav__button md-logo" aria-label="RecoFinement">
+      
+  <img src="../../../../assets/images/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            RecoFinement
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Additional Content
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/RomainCtl/RecoFinement/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../users/" class="md-tabs__link">
+        Users
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link md-tabs__link--active">
+        Developers
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../about/" class="md-tabs__link">
+        Advise.ly
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://RomainCtl.github.io/RecoFinement/" title="RecoFinement" class="md-nav__button md-logo" aria-label="RecoFinement">
+      
+  <img src="../../../../assets/images/favicon.png" alt="logo">
+
+    </a>
+    RecoFinement
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/RomainCtl/RecoFinement/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+      
+      <label class="md-nav__link" for="nav-2">
+        Users
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Users" data-md-level="1">
+        <label class="md-nav__title" for="nav-2">
+          <span class="md-nav__icon md-icon"></span>
+          Users
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" >
+      
+      <label class="md-nav__link" for="nav-2-2">
+        Authentication
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Authentication" data-md-level="2">
+        <label class="md-nav__title" for="nav-2-2">
+          <span class="md-nav__icon md-icon"></span>
+          Authentication
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/authentication/sign-up/" class="md-nav__link">
+        Register
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/authentication/sign-in/" class="md-nav__link">
+        Sign in
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" >
+      
+      <label class="md-nav__link" for="nav-2-3">
+        Content visualisation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Content visualisation" data-md-level="2">
+        <label class="md-nav__title" for="nav-2-3">
+          <span class="md-nav__icon md-icon"></span>
+          Content visualisation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/content/musics/" class="md-nav__link">
+        Musics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/content/movies/" class="md-nav__link">
+        Movies
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/content/series/" class="md-nav__link">
+        Series
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/content/games/" class="md-nav__link">
+        Games
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/content/books/" class="md-nav__link">
+        Books
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/content/applications/" class="md-nav__link">
+        Applications
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/content/search/" class="md-nav__link">
+        Search content
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/content/add_media/" class="md-nav__link">
+        Add a media
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4" >
+      
+      <label class="md-nav__link" for="nav-2-4">
+        Profile
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Profile" data-md-level="2">
+        <label class="md-nav__title" for="nav-2-4">
+          <span class="md-nav__icon md-icon"></span>
+          Profile
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-1" type="checkbox" id="nav-2-4-1" >
+      
+      <label class="md-nav__link" for="nav-2-4-1">
+        Manage your profile
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Manage your profile" data-md-level="3">
+        <label class="md-nav__title" for="nav-2-4-1">
+          <span class="md-nav__icon md-icon"></span>
+          Manage your profile
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/profile/edit-account/" class="md-nav__link">
+        Edit your account
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/profile/groups/" class="md-nav__link">
+        Manage your groups
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/profile/tpapps/" class="md-nav__link">
+        Third-party applications
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/profile/interests/" class="md-nav__link">
+        Your interests
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5" >
+      
+      <label class="md-nav__link" for="nav-2-5">
+        Administrator
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Administrator" data-md-level="2">
+        <label class="md-nav__title" for="nav-2-5">
+          <span class="md-nav__icon md-icon"></span>
+          Administrator
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/admin/administration_panel/" class="md-nav__link">
+        Administrator Panel
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/admin/sandbox/" class="md-nav__link">
+        Sandbox
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../users/admin/media_validation/" class="md-nav__link">
+        Media validation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      
+      <label class="md-nav__link" for="nav-3">
+        Developers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Developers" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasources/" class="md-nav__link">
+        Data sources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/" class="md-nav__link">
+        Architecture
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5" checked>
+      
+      <label class="md-nav__link" for="nav-3-5">
+        Application Services
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Application Services" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-5">
+          <span class="md-nav__icon md-icon"></span>
+          Application Services
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ui/" class="md-nav__link">
+        User Interface
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engine/" class="md-nav__link">
+        Recommendation Engine
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nginx/" class="md-nav__link">
+        Nginx
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5-5" type="checkbox" id="nav-3-5-5" checked>
+      
+      <label class="md-nav__link" for="nav-3-5-5">
+        Administrator Panel
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Administrator Panel" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-5-5">
+          <span class="md-nav__icon md-icon"></span>
+          Administrator Panel
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../profile/" class="md-nav__link">
+        Profile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Additional Content
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Additional Content
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#validate-content" class="md-nav__link">
+    Validate content
+  </a>
+  
+    <nav class="md-nav" aria-label="Validate content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application" class="md-nav__link">
+    Application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#book" class="md-nav__link">
+    Book
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episode" class="md-nav__link">
+    Episode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#game" class="md-nav__link">
+    Game
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#movie" class="md-nav__link">
+    Movie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serie" class="md-nav__link">
+    Serie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track" class="md-nav__link">
+    Track
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-6" type="checkbox" id="nav-3-6" >
+      
+      <label class="md-nav__link" for="nav-3-6">
+        External Services
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="External Services" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-6">
+          <span class="md-nav__icon md-icon"></span>
+          External Services
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../external_services/mailjet/" class="md-nav__link">
+        Mailjet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../external_services/spotify/" class="md-nav__link">
+        Spotify
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../external_services/tmdb/" class="md-nav__link">
+        TMDB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../external_services/gbooks/" class="md-nav__link">
+        Google Books
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../database/" class="md-nav__link">
+        Database
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+      
+      <label class="md-nav__link" for="nav-4">
+        Advise.ly
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Advise.ly" data-md-level="1">
+        <label class="md-nav__title" for="nav-4">
+          <span class="md-nav__icon md-icon"></span>
+          Advise.ly
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../about/" class="md-nav__link">
+        About us
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#validate-content" class="md-nav__link">
+    Validate content
+  </a>
+  
+    <nav class="md-nav" aria-label="Validate content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application" class="md-nav__link">
+    Application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#book" class="md-nav__link">
+    Book
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episode" class="md-nav__link">
+    Episode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#game" class="md-nav__link">
+    Game
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#movie" class="md-nav__link">
+    Movie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serie" class="md-nav__link">
+    Serie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track" class="md-nav__link">
+    Track
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/RomainCtl/RecoFinement/edit/master/docs/developers/services/admin_panel/additional_content.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Additional Content</h1>
+                
+                <h2 id="validate-content">Validate content</h2>
+<p>The sandbox allow administrator to add media content to the database. The administrator can validate the addition of the content to the database, or he can refuse it and the additional content will be deleted. The admin need <code>validate_media</code> permission to effectuate this action. </p>
+<p>Additional media content are different from basic content. </p>
+<h3 id="application">Application</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>app_id</strong></td>
+<td><strong>Integer</strong></td>
+<td><strong>Application identifier</strong></td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>Application name</td>
+</tr>
+<tr>
+<td>size</td>
+<td>String</td>
+<td>Application size</td>
+</tr>
+<tr>
+<td>installs</td>
+<td>String</td>
+<td>Number of installations by unique users</td>
+</tr>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>'Paid' or 'Free'</td>
+</tr>
+<tr>
+<td>price</td>
+<td>String</td>
+<td>Price</td>
+</tr>
+<tr>
+<td>content_rating</td>
+<td>String</td>
+<td>application classification (by age group)</td>
+</tr>
+<tr>
+<td>last_updated</td>
+<td>String</td>
+<td>last update date</td>
+</tr>
+<tr>
+<td>current_version</td>
+<td>String</td>
+<td>current app version number</td>
+</tr>
+<tr>
+<td>android_version</td>
+<td>String</td>
+<td>minimum android version required</td>
+</tr>
+<tr>
+<td>cover</td>
+<td>String</td>
+<td>cover url</td>
+</tr>
+</tbody>
+</table>
+<h3 id="book">Book</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>book_id</strong></td>
+<td><strong>Integer</strong></td>
+<td><strong>Additional book identifier</strong></td>
+</tr>
+<tr>
+<td>isbn</td>
+<td>String</td>
+<td>Book universal identifier</td>
+</tr>
+<tr>
+<td>title</td>
+<td>String</td>
+<td>Book title</td>
+</tr>
+<tr>
+<td>author</td>
+<td>String</td>
+<td>Book author</td>
+</tr>
+<tr>
+<td>year_of_publication</td>
+<td>Integer</td>
+<td>Year of publication</td>
+</tr>
+<tr>
+<td>publisher</td>
+<td>String</td>
+<td>Publisher company</td>
+</tr>
+<tr>
+<td>image_url_s</td>
+<td>String</td>
+<td>URL for small image size</td>
+</tr>
+<tr>
+<td>image_url_m</td>
+<td>String</td>
+<td>URL for medium image size</td>
+</tr>
+<tr>
+<td>image_url_l</td>
+<td>String</td>
+<td>URL for large image size</td>
+</tr>
+</tbody>
+</table>
+<h3 id="episode">Episode</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>episode_id</strong></td>
+<td><strong>Integer</strong></td>
+<td><strong>Episode identifier</strong></td>
+</tr>
+<tr>
+<td>imdbid</td>
+<td>String</td>
+<td>IMDB identifier</td>
+</tr>
+<tr>
+<td>title</td>
+<td>String</td>
+<td></td>
+</tr>
+<tr>
+<td>year</td>
+<td>Integer</td>
+<td>release year</td>
+</tr>
+<tr>
+<td>season_number</td>
+<td>Integer</td>
+<td></td>
+</tr>
+<tr>
+<td>episode_number</td>
+<td>Integer</td>
+<td></td>
+</tr>
+<tr>
+<td>serie_id</td>
+<td>Integer</td>
+<td><a href="#series">Serie</a> identifier</td>
+</tr>
+</tbody>
+</table>
+<h3 id="game">Game</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>game_id</strong></td>
+<td><strong>Integer</strong></td>
+<td><strong>Game identifier</strong></td>
+</tr>
+<tr>
+<td>steamid</td>
+<td>Integer</td>
+<td>Steam game identifier</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>Game name</td>
+</tr>
+<tr>
+<td>short_description</td>
+<td>Text</td>
+<td></td>
+</tr>
+<tr>
+<td>header_image</td>
+<td>String</td>
+<td></td>
+</tr>
+<tr>
+<td>website</td>
+<td>String</td>
+<td>URL of official game website</td>
+</tr>
+<tr>
+<td>developers</td>
+<td>String</td>
+<td>developers company name</td>
+</tr>
+<tr>
+<td>publishers</td>
+<td>String</td>
+<td>publisher company name</td>
+</tr>
+<tr>
+<td>price</td>
+<td>String</td>
+<td></td>
+</tr>
+<tr>
+<td>release_date</td>
+<td>String</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="movie">Movie</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>movie_id</strong></td>
+<td><strong>Integer</strong></td>
+<td><strong>Movie identifier</strong></td>
+</tr>
+<tr>
+<td>title</td>
+<td>String</td>
+<td>Movie title</td>
+</tr>
+<tr>
+<td>language</td>
+<td>String</td>
+<td>Main language</td>
+</tr>
+<tr>
+<td>actors</td>
+<td>String</td>
+<td>List of main actors separated by '|'</td>
+</tr>
+<tr>
+<td>year</td>
+<td>String</td>
+<td>Release year</td>
+</tr>
+<tr>
+<td>producers</td>
+<td>String</td>
+<td>List of producers separated by '|'</td>
+</tr>
+<tr>
+<td>director</td>
+<td>String</td>
+<td>Name of the director</td>
+</tr>
+<tr>
+<td>writer</td>
+<td>String</td>
+<td>Name of the writer</td>
+</tr>
+<tr>
+<td>imdbid</td>
+<td>String</td>
+<td>IMDB movie identifier</td>
+</tr>
+<tr>
+<td>tmdbid</td>
+<td>String</td>
+<td>TMDB movie identifier</td>
+</tr>
+<tr>
+<td>cover</td>
+<td>String</td>
+<td>Cover url</td>
+</tr>
+<tr>
+<td>plot_outline</td>
+<td>String</td>
+<td>synopsis</td>
+</tr>
+</tbody>
+</table>
+<h3 id="serie">Serie</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serie_id</strong></td>
+<td><strong>Integer</strong></td>
+<td><strong>Serie identifier</strong></td>
+</tr>
+<tr>
+<td>imdbid</td>
+<td>String</td>
+<td>IMDB identifier</td>
+</tr>
+<tr>
+<td>title</td>
+<td>String</td>
+<td></td>
+</tr>
+<tr>
+<td>start_year</td>
+<td>Integer</td>
+<td></td>
+</tr>
+<tr>
+<td>end_year</td>
+<td>Integer</td>
+<td></td>
+</tr>
+<tr>
+<td>writers</td>
+<td>Text</td>
+<td>List of writers separated by ','</td>
+</tr>
+<tr>
+<td>directors</td>
+<td>Text</td>
+<td>List of directors separated by ','</td>
+</tr>
+<tr>
+<td>actors</td>
+<td>Text</td>
+<td>List of actors separated by ','</td>
+</tr>
+<tr>
+<td>cover</td>
+<td>String</td>
+<td>Cover url</td>
+</tr>
+<tr>
+<td>plot_outline</td>
+<td>String</td>
+<td>synopsis</td>
+</tr>
+</tbody>
+</table>
+<h3 id="track">Track</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>track_id</strong></td>
+<td><strong>Integer</strong></td>
+<td><strong>Track identifier</strong></td>
+</tr>
+<tr>
+<td>title</td>
+<td>String</td>
+<td>Track title</td>
+</tr>
+<tr>
+<td>year</td>
+<td>Integer</td>
+<td>Release year</td>
+</tr>
+<tr>
+<td>artist_name</td>
+<td>String</td>
+<td>Artist name</td>
+</tr>
+<tr>
+<td>release</td>
+<td>String</td>
+<td>Realse (album) associated with this track</td>
+</tr>
+<tr>
+<td>track_mmid</td>
+<td>String</td>
+<td>Million Song track identifier</td>
+</tr>
+<tr>
+<td>recording_mbid</td>
+<td>UUID</td>
+<td>MusicBrainz track identifier</td>
+</tr>
+<tr>
+<td>spotify_id</td>
+<td>String</td>
+<td>Track spotify id</td>
+</tr>
+<tr>
+<td>covert_art_url</td>
+<td>Text</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+
+
+<!-- Application footer -->
+<footer class="md-footer">
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a
+          href="https://squidfunk.github.io/mkdocs-material/"
+          target="_blank" rel="noopener"
+        >
+          Material for MkDocs
+        </a>
+      </div>
+
+      <!-- Social links -->
+      
+
+      <div class="md-footer-copyright">
+        Solution made by Advise.ly
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../../..",
+          features: ['navigation.tabs', 'tabs'],
+          search: Object.assign({
+            worker: "../../../../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../../../../assets/javascript/zoom_image.js"></script>
+      
+    
+  </body>
+</html>

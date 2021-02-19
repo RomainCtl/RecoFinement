@@ -1,0 +1,15 @@
+.md-content img:hover {
+    cursor: zoom-in;
+}
+
+.md-content p {
+    text-align: justify;
+}
+
+.md-typeset .tabbed-set {
+    border: 1px solid #eee;
+}
+
+.md-typeset .tabbed-content {
+    padding: 0.5em 1em;
+}

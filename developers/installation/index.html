@@ -1,0 +1,1490 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://RomainCtl.github.io/RecoFinement/developers/installation/">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>Installation - RecoFinement</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7C&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheet/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#production-environment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://RomainCtl.github.io/RecoFinement/" title="RecoFinement" class="md-header-nav__button md-logo" aria-label="RecoFinement">
+      
+  <img src="../../assets/images/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            RecoFinement
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Installation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/RomainCtl/RecoFinement/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../users/" class="md-tabs__link">
+        Users
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Developers
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        Advise.ly
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://RomainCtl.github.io/RecoFinement/" title="RecoFinement" class="md-nav__button md-logo" aria-label="RecoFinement">
+      
+  <img src="../../assets/images/favicon.png" alt="logo">
+
+    </a>
+    RecoFinement
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/RomainCtl/RecoFinement/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+      
+      <label class="md-nav__link" for="nav-2">
+        Users
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Users" data-md-level="1">
+        <label class="md-nav__title" for="nav-2">
+          <span class="md-nav__icon md-icon"></span>
+          Users
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" >
+      
+      <label class="md-nav__link" for="nav-2-2">
+        Authentication
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Authentication" data-md-level="2">
+        <label class="md-nav__title" for="nav-2-2">
+          <span class="md-nav__icon md-icon"></span>
+          Authentication
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/authentication/sign-up/" class="md-nav__link">
+        Register
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/authentication/sign-in/" class="md-nav__link">
+        Sign in
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" >
+      
+      <label class="md-nav__link" for="nav-2-3">
+        Content visualisation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Content visualisation" data-md-level="2">
+        <label class="md-nav__title" for="nav-2-3">
+          <span class="md-nav__icon md-icon"></span>
+          Content visualisation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/content/musics/" class="md-nav__link">
+        Musics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/content/movies/" class="md-nav__link">
+        Movies
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/content/series/" class="md-nav__link">
+        Series
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/content/games/" class="md-nav__link">
+        Games
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/content/books/" class="md-nav__link">
+        Books
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/content/applications/" class="md-nav__link">
+        Applications
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/content/search/" class="md-nav__link">
+        Search content
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/content/add_media/" class="md-nav__link">
+        Add a media
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4" >
+      
+      <label class="md-nav__link" for="nav-2-4">
+        Profile
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Profile" data-md-level="2">
+        <label class="md-nav__title" for="nav-2-4">
+          <span class="md-nav__icon md-icon"></span>
+          Profile
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-1" type="checkbox" id="nav-2-4-1" >
+      
+      <label class="md-nav__link" for="nav-2-4-1">
+        Manage your profile
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Manage your profile" data-md-level="3">
+        <label class="md-nav__title" for="nav-2-4-1">
+          <span class="md-nav__icon md-icon"></span>
+          Manage your profile
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/profile/edit-account/" class="md-nav__link">
+        Edit your account
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/profile/groups/" class="md-nav__link">
+        Manage your groups
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/profile/tpapps/" class="md-nav__link">
+        Third-party applications
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/profile/interests/" class="md-nav__link">
+        Your interests
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5" >
+      
+      <label class="md-nav__link" for="nav-2-5">
+        Administrator
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Administrator" data-md-level="2">
+        <label class="md-nav__title" for="nav-2-5">
+          <span class="md-nav__icon md-icon"></span>
+          Administrator
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/admin/administration_panel/" class="md-nav__link">
+        Administrator Panel
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/admin/sandbox/" class="md-nav__link">
+        Sandbox
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../users/admin/media_validation/" class="md-nav__link">
+        Media validation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      
+      <label class="md-nav__link" for="nav-3">
+        Developers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Developers" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Installation
+      </a>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasources/" class="md-nav__link">
+        Data sources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        Architecture
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5" >
+      
+      <label class="md-nav__link" for="nav-3-5">
+        Application Services
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Application Services" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-5">
+          <span class="md-nav__icon md-icon"></span>
+          Application Services
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/ui/" class="md-nav__link">
+        User Interface
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/api/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/engine/" class="md-nav__link">
+        Recommendation Engine
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/nginx/" class="md-nav__link">
+        Nginx
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5-5" type="checkbox" id="nav-3-5-5" >
+      
+      <label class="md-nav__link" for="nav-3-5-5">
+        Administrator Panel
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Administrator Panel" data-md-level="3">
+        <label class="md-nav__title" for="nav-3-5-5">
+          <span class="md-nav__icon md-icon"></span>
+          Administrator Panel
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/admin_panel/profile/" class="md-nav__link">
+        Profile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/admin_panel/additional_content/" class="md-nav__link">
+        Additional Content
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-6" type="checkbox" id="nav-3-6" >
+      
+      <label class="md-nav__link" for="nav-3-6">
+        External Services
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="External Services" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-6">
+          <span class="md-nav__icon md-icon"></span>
+          External Services
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external_services/mailjet/" class="md-nav__link">
+        Mailjet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external_services/spotify/" class="md-nav__link">
+        Spotify
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external_services/tmdb/" class="md-nav__link">
+        TMDB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external_services/gbooks/" class="md-nav__link">
+        Google Books
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../database/" class="md-nav__link">
+        Database
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+      
+      <label class="md-nav__link" for="nav-4">
+        Advise.ly
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Advise.ly" data-md-level="1">
+        <label class="md-nav__title" for="nav-4">
+          <span class="md-nav__icon md-icon"></span>
+          Advise.ly
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About us
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/RomainCtl/RecoFinement/edit/master/docs/developers/installation.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>We have planned several installation methods for this project, it is nevertheless recommended using a <strong>Linux environment</strong>.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>It is recommended to have at least <strong>20 GB of free space</strong> on your machine (The database takes up a little more than 11 GB).</p>
+</div>
+<h2 id="production-environment">Production environment</h2>
+<p>In a production environment, all you need is a docker.</p>
+<p>We advise you to use this environment in the following cases:</p>
+<ul>
+<li>To deploy the application on a server</li>
+<li>To test the application locally (in your computer)</li>
+<li>To contribute to the project</li>
+<li>To test services independently of the full application</li>
+</ul>
+<h2 id="development-environment">Development environment</h2>
+<p>In a development environment, there will be several dependencies to install.</p>
+<p>We advise you to use this environment in the following cases:</p>
+<ul>
+<li>To contribute to the project with hot reloading</li>
+<li>If you want to access the database via an interface</li>
+<li>If you are on Windows and you don't want to use our solution: <a href="https://github.com/RomainCtl/vagrant_docker">https://github.com/RomainCtl/vagrant_docker</a> <em>(more information in the guide)</em></li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Production environment</label><div class="tabbed-content">
+<p>In order to be able to deploy, test or make changes to the application, you must have the necessary tools to run the application.</p>
+<ol>
+<li><code>make</code></li>
+<li><code>git</code> &amp; <code>git lfs</code> (Large File Storage)</li>
+<li><code>docker</code> &amp; <code>docker-compose</code></li>
+</ol>
+<p>and that's all!</p>
+<div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Linux (Debian)</label><div class="tabbed-content">
+<p><code>make</code> is normally installed by default.</p>
+<p>Install <code>git</code> and <code>git-lfs</code>:
+<div class="highlight"><pre><span></span><code>apt install git git-lfs
+git lfs install
+</code></pre></div></p>
+<p>You can install <code>docker</code> simply with:
+<div class="highlight"><pre><span></span><code>apt install docker.io docker-compose
+</code></pre></div></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Windows</label><div class="tabbed-content">
+<p>Download <code>git</code> from <a href="https://git-scm.com/download/win">here</a> and follow the instruction.</p>
+<p>Download <code>git lfs</code> from <a href="https://github.com/git-lfs/git-lfs/releases/download/v2.12.1/git-lfs-windows-v2.12.1.exe">here</a> and:
+<div class="highlight"><pre><span></span><code>git lfs install
+</code></pre></div></p>
+<p>If you work on windows, I advise you to follow the instructions in this repository: <a href="https://github.com/RomainCtl/vagrant_docker">https://github.com/RomainCtl/vagrant_docker</a></p>
+<p>So, each time you will use docker, you may start the vm (<code>make vm-up</code>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An Oracle VM Virtualbox will start and you will see it, you do not need to log on to it.
+The author of this repository chose to leave the VM window open to do not forget to switch it off before turning off the computer.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To use docker, do not forget to define the environment variables as the following: <code>./setenv-docker.bat</code>.</p>
+</div>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Mac</label><div class="tabbed-content">
+<p>For <code>make</code>, you will have to install the "Developer Tools" that are provided as optional packages in OS X installation disks.</p>
+<p><code>git</code> is normally installed by default, try:
+<div class="highlight"><pre><span></span><code>git --version
+</code></pre></div>
+on  your terminal, if it is not already installed, it will ask you to do so.</p>
+<p>Install <code>git-lfs</code>:
+<div class="highlight"><pre><span></span><code>brew install git-lfs
+git lfs install
+</code></pre></div></p>
+<p>Docker Compose is installed as part of <a href="https://docs.docker.com/docker-for-mac/install/">Docker for Mac</a>. So you only have to install Docker for MAC.</p>
+</div>
+</div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Development environment</label><div class="tabbed-content">
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This guide may not work on your environment, if this is the case, please refer to the official sites of the outbuildings.</p>
+<p>This guide is only intended to help you with the installation, but not with the configuration of the dependencies.</p>
+</div>
+<p>In order to be able to make changes to the application or  to access the database via an interface, you must have the necessary tools to run the application.</p>
+<ol>
+<li><code>make</code></li>
+<li><code>git</code> &amp; <code>git lfs</code> (Large File Storage)</li>
+<li><code>python</code>&gt;=3.8, <code>pip</code> and <code>pipenv</code></li>
+<li><code>npm</code></li>
+<li><code>postgresql</code>&gt;=10</li>
+<li><code>java</code>&gt;=11</li>
+</ol>
+<div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Linux (Debian)</label><div class="tabbed-content">
+<p><code>make</code> is normally installed by default.</p>
+<p>Install <code>git</code> and <code>git-lfs</code>:
+<div class="highlight"><pre><span></span><code>apt install git git-lfs
+git lfs install
+</code></pre></div></p>
+<p>Python 3.8, pip &amp; pipenv
+<div class="highlight"><pre><span></span><code>apt install python3.8 python3-pip
+python3 -m pip install pipenv
+</code></pre></div></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you have more than one version of Python installed on your machine, the <code>python3</code> command may execute a different version,</p>
+<p>See : <a href="https://jcutrer.com/linux/upgrade-python37-ubuntu1810">https://jcutrer.com/linux/upgrade-python37-ubuntu1810</a> (taking into account the desired version).</p>
+</div>
+<p>Npm
+<div class="highlight"><pre><span></span><code>apt install nodejs
+</code></pre></div></p>
+<p>PostgreSQL
+<div class="highlight"><pre><span></span><code>apt install postgresql postgresql-client
+</code></pre></div></p>
+<p>Java
+<div class="highlight"><pre><span></span><code>apt install openjdk-11-jre
+</code></pre></div></p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Windows</label><div class="tabbed-content">
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>We advise you to install:</strong></p>
+<ol>
+<li><a href="https://chocolatey.org/docs/installation">Choco</a>, software management for windows</li>
+<li><a href="https://cmder.net/">Cmder</a>, it is a command-line tool, it allows to replace advantageously cmd provided by default by Windows.</li>
+</ol>
+</div>
+<p>Make
+<div class="highlight"><pre><span></span><code>choco install -y make
+</code></pre></div></p>
+<p>Download <code>git</code> from <a href="https://git-scm.com/download/win">here</a> and follow the instruction.</p>
+<p>Download <code>git lfs</code> from <a href="https://github.com/git-lfs/git-lfs/releases/download/v2.12.1/git-lfs-windows-v2.12.1.exe">here</a> and:
+<div class="highlight"><pre><span></span><code>git lfs install
+</code></pre></div></p>
+<p>Python3.8 <a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a>, do not forget to tick the box "add to path".</p>
+<p>Npm, included with NodeJS <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
+<p>PostgreSQL <a href="https://www.postgresql.org/download/">https://www.postgresql.org/download/</a></p>
+<p>Java <a href="https://www.oracle.com/java/technologies/javase-jdk11-downloads.html">https://www.oracle.com/java/technologies/javase-jdk11-downloads.html</a></p>
+</div>
+<input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">Mac</label><div class="tabbed-content">
+<p>For <code>make</code>, you will have to install the "Developer Tools" that are provided as optional packages in OS X installation disks.</p>
+<p><code>git</code> is normally installed by default, try:
+<div class="highlight"><pre><span></span><code>git --version
+</code></pre></div>
+on  your terminal, if it is not already installed, it will ask you to do so.</p>
+<p>Install <code>git-lfs</code>:
+<div class="highlight"><pre><span></span><code>brew install git-lfs
+git lfs install
+</code></pre></div></p>
+<p>Python 3.8
+<a href="https://www.python.org/downloads/mac-osx/">https://www.python.org/downloads/mac-osx/</a></p>
+<p>Npm, included with NodeJS <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
+<p>PostgreSQL <a href="https://www.postgresql.org/download/">https://www.postgresql.org/download/</a></p>
+<p>Java <a href="https://www.oracle.com/java/technologies/javase-jdk11-downloads.html">https://www.oracle.com/java/technologies/javase-jdk11-downloads.html</a></p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="clone-project">Clone project</h2>
+<p>We use a micro-service architecture (<em><a href="../architecture">more information in this section</a></em>). We have a "master project" which has all services as sub-modules.</p>
+<p>Clone the "master project" and follow these commands:
+<div class="highlight"><pre><span></span><code>git clone https://github.com/RomainCtl/RecoFinement.git
+</code></pre></div>
+Imports git submodule (services)
+<div class="highlight"><pre><span></span><code>make init
+</code></pre></div>
+Import our data (may take some time depending on your internet connection)
+<div class="highlight"><pre><span></span><code>cd ./datas
+git lfs pull
+cd ..
+</code></pre></div></p>
+<h2 id="environment-variables">Environment variables</h2>
+<p>In order to run correctly, the project needs to recover its configuration.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you need to generate some random string, you can use this command:
+<div class="highlight"><pre><span></span><code>python3 -c <span class="s2">&quot;import random; print(&#39;&#39;.join(random.choice(&#39;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!%*+-:;@_&#39;) for _ in range(30)))&quot;</span>
+</code></pre></div></p>
+</div>
+<h3 id="api">API</h3>
+<p>To do so, just copy the .env.default file:
+<div class="highlight"><pre><span></span><code>cd services/api
+cp .env.default .env
+</code></pre></div>
+Then replace the values, and in particular the variables for the connection to the database.</p>
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">With docker</label><div class="tabbed-content">
+<p>Generate some random string for <code>DB_USER_LOGIN</code>, <code>DB_USER_PASSWORD</code>, <code>ENGINE_APIKEY</code> and <code>SECRET_KEY</code></p>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Without docker</label><div class="tabbed-content">
+<p>You need to create <code>recofinement</code> database, when you created this one, you must have entered a user who owns this database. <code>DB_USER_LOGIN</code> and <code>DB_USER_PASSWORD</code> variables are its identifiers.</p>
+<p>Generate some random string for <code>SECRET_KEY</code> and <code>ENGINE_APIKEY</code>.</p>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This api uses some external services, and you need to configure them. You will find a guide on their respective pages:</p>
+<ol>
+<li><a href="../external_services/mailjet">Mailjet</a></li>
+<li><a href="../external_services/spotify">Spotify</a></li>
+<li><a href="../external_services/tmdb">TMDB</a></li>
+<li><a href="../external_services/gbooks">Google Books</a></li>
+</ol>
+<p>Anyway, you can use <strong>Recofinement</strong> without these features, users will simply not be able to receive email nor to link their account to the services mentioned.</p>
+</div>
+<h3 id="engine">Engine</h3>
+<p>First, just copy the .env.default file:
+<div class="highlight"><pre><span></span><code>cd services/reco_engine
+cp .env.default .env
+</code></pre></div>
+Then replace the values.</p>
+<p>You only need to set <code>DB_USER_LOGIN</code>, <code>DB_USER_PASSWORD</code>, <code>FLASK_SECRET</code> and <code>API_TOKEN</code> variables.</p>
+<p><code>FLASK_SECRET</code> must be a random string (can also use the command above).</p>
+<p><code>DB_USER_LOGIN</code> and <code>DB_USER_PASSWORD</code> are the same as those used for the <strong>api</strong>.</p>
+<p><code>API_TOKEN</code> corresponds to the variable <code>ENGINE_APIKEY</code> in the <strong>api</strong>.</p>
+<h2 id="import-data">Import data</h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The database schema is created with the api (with an ORM)</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Depending on the performance of the machine you are using, this operation may take some time (<strong>several hours</strong>).</p>
+</div>
+<div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">With docker</label><div class="tabbed-content">
+<ol>
+<li>Build docker image for the database and the api
+<div class="highlight"><pre><span></span><code>make db-build api-build
+</code></pre></div></li>
+<li>Start database and api container
+<div class="highlight"><pre><span></span><code>make db api
+</code></pre></div></li>
+<li>Import data
+<div class="highlight"><pre><span></span><code>make import-data
+</code></pre></div></li>
+</ol>
+<details class="tip"><summary>If you want to see logs</summary><div class="highlight"><pre><span></span><code>make logs
+</code></pre></div>
+</details>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Without docker</label><div class="tabbed-content">
+<ol>
+<li>Make sure that the database service is running (<em>with a <code>recofinement</code> database created</em>).</li>
+<li>Let's create the database schema:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> services/api
+make init
+make db-update
+<span class="nb">cd</span>  ../..
+</code></pre></div></li>
+<li>Edit the importation script:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> datas
+<span class="c1"># Replace &quot;&lt;pwd&gt;&quot; by the current absolute path (important!)</span>
+sed -i <span class="s2">&quot;s#FROM &#39;#FROM &#39;&lt;pwd&gt;#g&quot;</span> script.sql
+</code></pre></div></li>
+<li>Execute this script on your database</li>
+</ol>
+</div>
+</div>
+<h2 id="usage">Usage</h2>
+<div class="tabbed-set" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">With docker</label><div class="tabbed-content">
+<p><em>Usually Docker uses the default <strong>172.17.0.1/16</strong> subnet for container networking.</em></p>
+<details class="warning" open="open"><summary>If you use <strong>Windows</strong></summary><p>You may write the following line into <code>.env</code> file (This is the ip used to access the docker hub).
+<div class="highlight"><pre><span></span><code>DOCKER_IP=192.168.56.10
+</code></pre></div></p>
+</details>
+<ol>
+<li>Build docker image from sources (all services)
+<div class="highlight"><pre><span></span><code>make build
+</code></pre></div></li>
+<li>Start the container (all services)
+<div class="highlight"><pre><span></span><code>make start
+</code></pre></div></li>
+<li>Display logs from the running container (all services)
+<div class="highlight"><pre><span></span><code>make logs
+</code></pre></div></li>
+<li>Stop the container (all services)
+<div class="highlight"><pre><span></span><code>make stop
+</code></pre></div></li>
+<li>Destroy the container (all services)
+<div class="highlight"><pre><span></span><code>make rm
+</code></pre></div></li>
+</ol>
+<p>You can also do each action for one service using:
+<div class="highlight"><pre><span></span><code><span class="c1">## (Re)start &#39;api&#39; service only (also available: &#39;api-[build|logs|sh|stop|rm])</span>
+make api
+
+<span class="c1">## (Re)start &#39;engine&#39; service only (also available: &#39;engine-[build|logs|sh|stop|rm])</span>
+make engine
+
+<span class="c1">## (Re)start &#39;cron&#39; service only (also available: &#39;cron-[build|logs|sh|stop|rm])</span>
+make cron
+
+<span class="c1">## (Re)start &#39;db&#39; service only (also available: &#39;db-[build|logs|sh|stop|rm])</span>
+make db
+
+<span class="c1">## (Re)start &#39;front&#39; service only (also available: &#39;front-[build|logs|sh|stop|rm])</span>
+make front
+
+<span class="c1">## (Re)start &#39;nginx&#39; service only (also available: &#39;nginx-[build|logs|sh|stop|rm])</span>
+make nginx
+</code></pre></div></p>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">Without docker</label><div class="tabbed-content">
+<p><strong>UI Service:</strong></p>
+<ol>
+<li>Install dependencies
+<div class="highlight"><pre><span></span><code>make init
+</code></pre></div></li>
+<li>Serve locally the development build (with hot-reloads)
+<div class="highlight"><pre><span></span><code>make serve
+<span class="c1"># or</span>
+ng serve
+</code></pre></div></li>
+</ol>
+<p><strong>API Service:</strong></p>
+<ol>
+<li>Install dependencies
+<div class="highlight"><pre><span></span><code>make init
+</code></pre></div></li>
+<li>Update database to the last migration (or initialize it if it does not exist)
+<div class="highlight"><pre><span></span><code>make db-update
+</code></pre></div></li>
+<li>Serve locally the development build
+<div class="highlight"><pre><span></span><code>make serve
+</code></pre></div></li>
+</ol>
+<p><strong>Engine Service:</strong></p>
+<ol>
+<li>Install dependencies
+<div class="highlight"><pre><span></span><code>make init
+</code></pre></div></li>
+<li>Serve locally the development build
+<div class="highlight"><pre><span></span><code>make serve
+</code></pre></div></li>
+</ol>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you want to know more about the available orders and how you can contribute to the project, we invite you to look at the 'README.md' files of each repository.</p>
+<p>You can access it by clicking on the github button at the top right of this site.</p>
+</div>
+<h1 id="add-the-admin-role-to-a-user">Add the admin role to a user</h1>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>It is preferable to have imported the data beforehand (<a href="#import-data">see here</a>) and to have created a user (<a href="../../users/authentication/sign-up">register</a>).</p>
+</div>
+<div class="tabbed-set" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">With docker</label><div class="tabbed-content">
+<ol>
+<li>Connect to your db container
+<div class="highlight"><pre><span></span><code>make db-sh
+</code></pre></div></li>
+<li>Connect to the db
+<div class="highlight"><pre><span></span><code>psql -d &lt;db_name&gt; -U &lt;user_name&gt;
+</code></pre></div></li>
+<li>Find your user_id
+<div class="highlight"><pre><span></span><code>SELECT user_id from public.user WHERE email = &#39;&lt;your email&gt;&#39;;
+</code></pre></div></li>
+<li>Add the admin role
+<div class="highlight"><pre><span></span><code>INSERT INTO public.user_role VALUES (&lt;user_id&gt;, 2);
+</code></pre></div></li>
+</ol>
+</div>
+<input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><label for="__tabbed_7_2">Without docker</label><div class="tabbed-content">
+<ol>
+<li>Connect to the db
+<div class="highlight"><pre><span></span><code>psql -d &lt;db_name&gt; -U &lt;user_name&gt;
+</code></pre></div></li>
+<li>Find your user_id
+<div class="highlight"><pre><span></span><code>SELECT user_id from public.user WHERE email = &#39;&lt;your email&gt;&#39;;
+</code></pre></div></li>
+<li>Add the admin role
+<div class="highlight"><pre><span></span><code>INSERT INTO public.user_role VALUES (&lt;user_id&gt;, 2);
+</code></pre></div></li>
+</ol>
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+
+
+<!-- Application footer -->
+<footer class="md-footer">
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a
+          href="https://squidfunk.github.io/mkdocs-material/"
+          target="_blank" rel="noopener"
+        >
+          Material for MkDocs
+        </a>
+      </div>
+
+      <!-- Social links -->
+      
+
+      <div class="md-footer-copyright">
+        Solution made by Advise.ly
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ['navigation.tabs', 'tabs'],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../../assets/javascript/zoom_image.js"></script>
+      
+    
+  </body>
+</html>
